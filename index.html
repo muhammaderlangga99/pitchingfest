@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         .boxes {
-            opacity: 0.100;
+            opacity: 0.080;
             background-image:  linear-gradient(#a6acc6 1.8px, transparent 1.8px), linear-gradient(to right, #a6acc6 1.8px, transparent 1.8px);
             background-size: 36px 36px;
         }
@@ -69,16 +69,16 @@
     <!-- end navbar -->
 
     <!-- header -->
-    <section class="bg-transparent flex lg:h-screen mt-20 lg:mt-0 capitalize overflow-hidden">
+    <section class="bg-transparent flex lg:h-[120vh] mt-20 lg:mt-0 capitalize overflow-hidden">
         <section class="absolute lg:h-screen lg:mt-0 -z-20 w-full flex items-center justify-around boxes bg-transparent overflow-hidden"></section>
         <section class="absolute lg:h-screen mt-20 lg:mt-0 w-full flex items-center justify-evenly z-0 bg-transparent overflow-hidden">
-            <img src="public/img/red-header.svg" class="blur-xl w-48 opacity-30 lg:translate-y-40 z-10">
-            <img src="public/img/orange-header.svg" class="blur-xl w-48" alt="">
-            <img src="public/img/blue-header.svg" class="blur-xl w-48 lg:-translate-y-52" alt="">
+            <img src="public/img/red-header.svg" class="blur-xl w-48 opacity-20 lg:translate-y-40 z-10">
+            <img src="public/img/orange-header.svg" class="blur-xl w-48 opacity-20" alt="">
+            <img src="public/img/blue-header.svg" class="blur-xl w-48 lg:-translate-y-52 opacity-30" alt="">
         </section>
         <div class="py-8 px-4 m-auto max-w-screen-xl text-center lg:py-16 z-30">
             <p class="text-slate-400 capitalize font-medium mb-3"><img src="public/img/trilogi.png" class="grayscale m-auto w-8 mr-2 inline" alt="Pitching Fertival"> Part of the trilogi university</p>
-            <h1 class="mb-4 inline-block text-3xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white bg-opacity-95">Technososiopreneurship: shaping a sustainable future.</h1>
+            <h1 class="mb-4 lg:p-5 inline-block text-3xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white bg-opacity-95 backdrop-blur-xl">Technososiopreneurship: shaping a sustainable future.</h1>
             <span id="element" class="text-lg items-center justify-center font-normal text-gray-500 lg:text-xl dark:text-gray-400 caret-slate-300"></span>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 mt-8">
                 <a href="public/proposal.docx"
@@ -90,10 +90,44 @@
                     Explore 
                 </a>
             </div>
+            <h3 class="text-center text-slate-500 font-medium mt-8 mb-5">Our Sponsor:</h3>
+            
+            <div class="flex flex-wrap justify-center lg:gap-x-14 gap-x-14 p-3 gap-y-8 items-center backdrop-blur-lg">
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/aqua.png" alt="aqua" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/indosat.png" alt="indosat" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/mayora.png" alt="mayora" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/nestle.png" alt="nestle" class="w-20" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/sidomuncul.png" alt="tokopedia" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/panasonic.png" alt="panasonic" />
+                </div>
+                <div
+                    class="w-20 h-20 text-slate-600 text-4xl font-bold transition-all duration-300 overflow-hidden object-cover items-center justify-center hidden lg:flex">
+                    50+
+                </div>
+            </div>
         </div>
     </section>
-
     <!-- end header -->
+    <!-- sponsor -->
+    
+    <!-- end sponsor -->
 
 <!-- typed js -->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -101,7 +135,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 <script>
     var typed = new Typed('#element', {
-        strings: ['Lorem ipsum dolor sit amet consectetur,', 'voluptatibus ipsa nulla dolor esadipisicing elit'],
+        strings: ['Lorem ipsum dolor sit amet consectetur,', 'voluptatibus ipsa nulla dolor esadipisicing elit Eius maxime debitis doloremque magnam', ' consectetur nisi expedita molestiae error est tempore a illo repellendus itaque fugit. Quod, ea ex!'],
         typeSpeed: 40,
         backSpeed: 20,
         loop: false,
