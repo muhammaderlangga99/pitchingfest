@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <style>
+        .boxes {
+            opacity: 0.100;
+            background-image:  linear-gradient(#a6acc6 1.8px, transparent 1.8px), linear-gradient(to right, #a6acc6 1.8px, transparent 1.8px);
+            background-size: 36px 36px;
+        }
+    </style>
     <title>Pitching Fest</title>
 </head>
 <body>
@@ -61,24 +68,27 @@
 
     <!-- header -->
     <section class="bg-transparent flex lg:h-screen mt-20 lg:mt-0 capitalize overflow-hidden">
-        <section class="absolute lg:h-screen mt-20 lg:mt-0 -z-20 w-full flex items-center justify-around">
-            <img src="public/img/red-header.svg" class="blur-2xl w-48 opacity-30 absolute">
+        <section class="absolute lg:h-screen mt-20 lg:mt-0 -z-20 w-full flex items-center justify-around boxes bg-transparent">
+           
+        </section>
+        <section class="absolute lg:h-screen mt-20 lg:mt-0 w-full flex items-center justify-around z-0 bg-transparent">
+            <img src="public/img/red-header.svg" class="blur-2xl w-48 opacity-30 absolute z-10">
             <img src="public/img/orange-header.svg" class="blur-2xl w-48" alt="">
             <img src="public/img/blue-header.svg" class="blur-xl w-48" alt="">
         </section>
         <div class="py-8 px-4 m-auto max-w-screen-xl text-center lg:py-16">
-            <p class="text-slate-400 capitalize font-medium"><img src="public/img/trilogi.png" class="grayscale m-auto w-8 mr-2 inline" alt=""> Part of the trilogi university</p>
+            <p class="text-slate-400 capitalize font-medium mb-3"><img src="public/img/trilogi.png" class="grayscale m-auto w-8 mr-2 inline" alt=""> Part of the trilogi university</p>
             <h1
-                class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Technososiopreneurship: shaping a sustainable future.</h1>
+                class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white backdrop-blur-lg">Technososiopreneurship: shaping a sustainable future.</h1>
             <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, aliquid.</p>
-            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 backdrop-blur-xl">
                 <a href="#"
-                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-blue-600 rounded-full bg-blue-100 hover:bg-blue-800 focus:ring-4 border border-blue-500 focus:ring-blue-300 dark:focus:ring-blue-900 hover:text-blue-50 shadow-2xl">
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-blue-600 rounded-full bg-blue-100 hover:bg-blue-800 focus:ring-4 border border-blue-500 focus:ring-blue-300 dark:focus:ring-blue-900 hover:text-blue-50">
                     download proposals
                     <i class="bi bi-arrow-down-short ml-2"></i>
                 <a href="#"
                     class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-full border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                    About us
+                    Explore
                 </a>
             </div>
         </div>
