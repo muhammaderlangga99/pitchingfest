@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon">
+    <!-- flowbite -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <!-- animetion -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         .boxes {
             opacity: 0.100;
@@ -67,18 +70,17 @@
 
     <!-- header -->
     <section class="bg-transparent flex lg:h-screen mt-20 lg:mt-0 capitalize overflow-hidden">
-        <section class="absolute  h-screen lg:h-screen lg:mt-0 -z-20 w-full flex items-center justify-around md:boxes bg-transparent overflow-hidden"></section>
+        <section class="absolute lg:h-screen lg:mt-0 -z-20 w-full flex items-center justify-around boxes bg-transparent overflow-hidden"></section>
         <section class="absolute lg:h-screen mt-20 lg:mt-0 w-full flex items-center justify-evenly z-0 bg-transparent overflow-hidden">
             <img src="public/img/red-header.svg" class="blur-xl w-48 opacity-30 lg:translate-y-40 z-10">
             <img src="public/img/orange-header.svg" class="blur-xl w-48" alt="">
             <img src="public/img/blue-header.svg" class="blur-xl w-48 lg:-translate-y-52" alt="">
         </section>
         <div class="py-8 px-4 m-auto max-w-screen-xl text-center lg:py-16 z-30">
-            <p class="text-slate-400 capitalize font-medium mb-3"><img src="public/img/trilogi.png" class="grayscale m-auto w-8 mr-2 inline" alt=""> Part of the trilogi university</p>
-            <h1
-                class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white bg-opacity-95">Technososiopreneurship: shaping a sustainable future.</h1>
-            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, aliquid.</p>
-            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <p class="text-slate-400 capitalize font-medium mb-3"><img src="public/img/trilogi.png" class="grayscale m-auto w-8 mr-2 inline" alt="Pitching Fertival"> Part of the trilogi university</p>
+            <h1 class="mb-4 inline-block text-3xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white bg-opacity-95">Technososiopreneurship: shaping a sustainable future.</h1>
+            <span id="element" class="text-lg items-center justify-center font-normal text-gray-500 lg:text-xl dark:text-gray-400 caret-slate-300"></span>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 mt-8">
                 <a href="public/proposal.docx"
                     class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-blue-600 rounded-full bg-blue-100 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 hover:text-blue-50">
                     download proposal
@@ -91,11 +93,25 @@
         </div>
     </section>
 
-   
-
     <!-- end header -->
 
-
+<!-- typed js -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- flowbite -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Lorem ipsum dolor sit amet consectetur,', 'voluptatibus ipsa nulla dolor esadipisicing elit'],
+        typeSpeed: 40,
+        backSpeed: 20,
+        loop: false,
+        showCursor: true,
+        cursorChar: '|',
+        autoInsertCss: true,
+        smartBackspace: true,
+    });
+</script>
+<!-- animetion -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
