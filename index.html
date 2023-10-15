@@ -72,8 +72,8 @@
     <section class="bg-transparent flex lg:h-[120vh] mt-20 lg:mt-0 capitalize overflow-hidden">
         <section class="absolute lg:h-screen lg:mt-0 -z-20 w-full flex items-center justify-around boxes bg-transparent overflow-hidden"></section>
         <section class="absolute lg:h-screen mt-20 lg:mt-0 w-full flex items-center justify-evenly z-0 bg-transparent overflow-hidden">
-            <img src="public/img/red-header.svg" class="blur-xl w-48 opacity-20 lg:translate-y-40 z-10">
-            <img src="public/img/orange-header.svg" class="blur-xl w-48 opacity-20" alt="">
+            <img src="public/img/red-header.svg" class="blur-xl w-48 opacity-25 lg:translate-y-40 z-10">
+            <img src="public/img/orange-header.svg" class="blur-xl w-48 opacity-25" alt="">
             <img src="public/img/blue-header.svg" class="blur-xl w-48 lg:-translate-y-52 opacity-30" alt="">
         </section>
         <div class="py-8 px-4 m-auto max-w-screen-xl text-center lg:py-16 z-30">
@@ -125,9 +125,25 @@
         </div>
     </section>
     <!-- end header -->
-    <!-- sponsor -->
-    
-    <!-- end sponsor -->
+
+    <!-- introducing -->
+    <section class="grid lg:grid-cols-5 gap-3 max-w-6xl mt-20 lg:mt-0 m-auto font-poppins lg:h-screen overflow-hidden">
+        <div class="lg:col-span-2 p-5 relative">
+            <img src="public/img/blue-header.svg" class="absolute blur-2xl w-48" alt="">
+            <div class="boxes absolute w-full h-3/6"></div>
+            <img src="public/img/logo.png" class="w-20 stroke-red-400" alt="">
+            <h1 class="font-bold backdrop-blur-xl text-gray-900 dark:text-white mt-5 text-6xl lg:text-7xl">Introducing <br> Pitching Festival.</h1>
+        </div>
+        <div class="lg:col-span-3 text-slate-500 flex flex-col justify-center gap-y-5 p-5">
+            <p class="font-medium lg:p-5 rounded-xl tracking-wide">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum eum inventore magni doloribus possimus, quo sed esse odio molestiae soluta, praesentium optio cumque tempora! Laudantium, distinctio? Esse, harum explicabo!
+            </p>
+            <p class="font-medium lg:p-5 rounded-xl tracking-wide">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum eum inventore magni doloribus possimus, quo sed esse odio molestiae soluta, praesentium optio cumque tempora! Laudantium, distinctio? Esse, harum explicabo!
+            </p>
+        </div>
+    </section>
+    <!-- end introducing -->
 
 <!-- typed js -->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -136,7 +152,7 @@
 <script>
     var typed = new Typed('#element', {
         strings: ['Lorem ipsum dolor sit amet consectetur,', 'voluptatibus ipsa nulla dolor esadipisicing elit Eius maxime debitis doloremque magnam', ' consectetur nisi expedita molestiae error est tempore a illo repellendus itaque fugit. Quod, ea ex!'],
-        typeSpeed: 40,
+        typeSpeed: 30,
         backSpeed: 20,
         loop: false,
         showCursor: true,
