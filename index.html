@@ -132,7 +132,7 @@
             <img src="public/img/blue-header.svg" class="absolute blur-2xl w-48" alt="">
             <div class="boxes absolute w-full h-3/6"></div>
             <img src="public/img/logo.png" class="w-20 stroke-red-400" alt="">
-            <h1 class="font-bold backdrop-blur-xl text-gray-900 dark:text-white mt-5 text-6xl lg:text-7xl">Introducing <br> Pitching Festival.</h1>
+            <h1 id="intro-header" class="intro-header font-bold backdrop-blur-xl text-gray-900 dark:text-white mt-5 text-6xl lg:text-7xl"></h1>
         </div>
         <div class="lg:col-span-3 text-slate-500 flex flex-col justify-center gap-y-5 p-5">
             <p class="font-medium lg:p-5 rounded-xl tracking-wide">
@@ -147,18 +147,29 @@
 
 <!-- typed js -->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- core type js -->
+<script src="public/js/core.js"></script>
 <!-- flowbite -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 <script>
-    var typed = new Typed('#element', {
-        strings: ['Lorem ipsum dolor sit amet consectetur,', 'voluptatibus ipsa nulla dolor esadipisicing elit Eius maxime debitis doloremque magnam', ' consectetur nisi expedita molestiae error est tempore a illo repellendus itaque fugit. Quod, ea ex!'],
-        typeSpeed: 30,
-        backSpeed: 20,
-        loop: false,
-        showCursor: true,
-        cursorChar: '|',
-        autoInsertCss: true,
-        smartBackspace: true,
+    var typed = new Typewriter('#element', {
+        deleteSpeed: 20,
+        typedSpeed: 100,
+    });
+
+    typed
+    .typeString('Lorem ipsum dolor sit amet consectetur,')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('voluptatibus ipsa nulla dolor esadipisicing elit Eius')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('consectetur nisi expedita molestiae error est tempore a illo repellendus itaque fugit. Quod, ea ex!')
+    .start();
+
+    new Typewriter('#intro-header', {
+        strings: ['Introdution Pitching Festival'],
+        autoStart: true,
     });
 </script>
 <!-- animetion -->
