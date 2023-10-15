@@ -1,9 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon">
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <!-- animetion -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .boxes {
+            opacity: 0.080;
+            background-image:  linear-gradient(#a6acc6 1.8px, transparent 1.8px), linear-gradient(to right, #a6acc6 1.8px, transparent 1.8px);
+            background-size: 36px 36px;
+        }
+    </style>
+    <title>Pitching Fest</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="backdrop-blur-lg fixed w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="" class="flex items-center">
+                <img src="public/img/logo.png" class="h-8 mr-3" alt="Pitching">
+                <span class="self-center text-xl font-semibold whitespace-nowrap font-poppins hidden lg:flex text-slate-800">Piching festival</span>
+            </a>
+            <div class="flex md:order-2">
+                <a href="public/proposal.docx" type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-3 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read Our Proposals</a>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-300 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- header -->
+    <section class="bg-transparent flex lg:h-[120vh] mt-20 lg:mt-0 capitalize overflow-hidden">
+        <section class="absolute lg:h-screen lg:mt-0 -z-20 w-full flex items-center justify-around boxes bg-transparent overflow-hidden"></section>
+        <section class="absolute lg:h-screen mt-20 lg:mt-0 w-full flex items-center justify-evenly z-0 bg-transparent overflow-hidden">
+            <img src="public/img/red-header.svg" class="blur-xl w-48 opacity-25 lg:translate-y-40 z-10">
+            <img src="public/img/orange-header.svg" class="blur-xl w-48 opacity-25" alt="">
+            <img src="public/img/blue-header.svg" class="blur-xl w-48 lg:-translate-y-52 opacity-30" alt="">
+        </section>
+        <div class="py-8 px-4 m-auto max-w-screen-xl text-center lg:py-16 z-30">
+            <p class="text-slate-400 capitalize font-medium mb-3"><img src="public/img/trilogi.png" class="grayscale m-auto w-8 mr-2 inline" alt="Pitching Fertival"> Part of the trilogi university</p>
+            <h1 class="mb-4 lg:p-5 inline-block text-3xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white bg-opacity-95 backdrop-blur-xl">Technososiopreneurship: shaping a sustainable future.</h1>
+            <p id="element" class="text-lg inline-block items-center justify-center text-gray-500 lg:text-xl dark:text-gray-400 caret-slate-300 font-medium"></p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 mt-8">
+                <a href="public/proposal.docx"
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-blue-600 rounded-full bg-blue-100 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 hover:text-blue-50">
+                    download proposal
+                    <i class="bi bi-arrow-down-short ml-2"></i>
+                <a href="#"
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-full border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 bg-white">
+                    Explore 
+                </a>
+            </div>
+            <h3 class="text-center text-slate-500 font-medium mt-8 mb-5">Our Sponsor:</h3>
+            
+            <div class="flex flex-wrap justify-center lg:gap-x-14 gap-x-14 p-3 gap-y-8 items-center backdrop-blur-lg">
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/aqua.png" alt="aqua" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/indosat.png" alt="indosat" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/mayora.png" alt="mayora" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/nestle.png" alt="nestle" class="w-20" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/sidomuncul.png" alt="tokopedia" />
+                </div>
+                <div
+                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center">
+                    <img src="public/img/panasonic.png" alt="panasonic" />
+                </div>
+                <div
+                    class="w-20 h-20 text-slate-600 text-4xl font-bold transition-all duration-300 overflow-hidden object-cover items-center justify-center hidden lg:flex">
+                    50+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end header -->
+
+    <!-- introducing -->
+    <section class="grid lg:grid-cols-5 gap-3 max-w-6xl mt-20 lg:mt-0 m-auto font-poppins lg:h-[80vh] overflow-hidden">
+        <div class="lg:col-span-2 p-5 relative my-auto">
+            <img src="public/img/blue-header.svg" class="absolute blur-2xl w-48" alt="">
+            <div class="boxes absolute w-full h-3/6"></div>
+            <img src="public/img/logo.png" class="w-20 stroke-red-400" alt="">
+            <h1 id="intro-header" class="intro-header font-bold backdrop-blur-xl text-gray-900 dark:text-white mt-5 text-5xl"></h1>
+        </div>
+        <div class="lg:col-span-3 text-slate-500 flex flex-col gap-y-5 p-5 my-auto">
+            <p class="font-medium lg:p-5 rounded-xl tracking-normal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum eum inventore magni doloribus possimus, quo sed esse odio molestiae soluta, praesentium optio cumque tempora! Laudantium, distinctio? Esse, harum explicabo!
+            </p>
+            <p class="font-medium lg:p-5 rounded-xl tracking-normal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum eum inventore magni doloribus possimus, quo sed esse odio molestiae soluta, praesentium optio cumque tempora! Laudantium, distinctio? Esse, harum explicabo!
+            </p>
+        </div>
+    </section>
+    <!-- end introducing -->
+
+    <!-- goal -->
+    <section id="goal">
+        <div class="max-w-6xl m-auto font-poppins p-5 lg:h-[120vh] flex flex-col justify-center mt-20 lg:mt-0">
+            <div class="md:w-2/3 lg:w-1/2">
+                <i class="bi bi-stars text-4xl text-amber-300"></i>
+                    <path fill-rule="evenodd"
+                        d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                        clip-rule="evenodd" />
+                </svg>
+    
+                <h2 class="my-8 text-2xl font-bold text-black md:text-4xl">
+                    A technology-first approach to payments
+                    and finance
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 font-medium tracking-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                    ad ipsum pariatur autem, fugit laborum in atque amet obcaecati? Nisi minima aspernatur, quidem nulla
+                    cupiditate nam consequatur eligendi magni adipisci.</p>
+            </div>
+            <div
+                class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-300 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+                <div
+                    class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512"
+                            height="512" alt="burger illustration" />
+    
+                        <div class="space-y-2">
+                            <h5
+                                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                First feature
+                            </h5>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                            </p>
+                        </div>
+                        <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                            <span class="text-sm">Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                <path fill-rule="evenodd"
+                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" class="w-12" width="512"
+                            height="512" alt="burger illustration" />
+    
+                        <div class="space-y-2">
+                            <h5
+                                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                Second feature
+                            </h5>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                            </p>
+                        </div>
+                        <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                            <span class="text-sm">Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                <path fill-rule="evenodd"
+                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" class="w-12" width="512"
+                            height="512" alt="burger illustration" />
+    
+                        <div class="space-y-2">
+                            <h5
+                                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                Third feature
+                            </h5>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                            </p>
+                        </div>
+                        <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                            <span class="text-sm">Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                <path fill-rule="evenodd"
+                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-00/10">
+                    <div
+                        class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" class="w-12" width="512"
+                            height="512" alt="burger illustration" />
+    
+                        <div class="space-y-2">
+                            <h5
+                                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                More features
+                            </h5>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                            </p>
+                        </div>
+                        <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                            <span class="text-sm">Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                <path fill-rule="evenodd"
+                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end goal -->
+
+<!-- typed js -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- core type js -->
+<script src="public/js/core.js"></script>
+<!-- flowbite -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script>
+    var typed = new Typewriter('#element', {
+        deleteSpeed: 20,
+        typedSpeed: 100,
+    });
+
+    typed
+    .typeString('Lorem ipsum dolor sit amet consectetur,')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('voluptatibus ipsa nulla dolor esadipisicing elit Eius')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('consectetur nisi expedita molestiae error est tempore a illo repellendus itaque fugit. Quod, ea ex!')
+    .start();
+
+    new Typewriter('#intro-header', {
+        strings: ['Introdution Pitching Festival'],
+        autoStart: true,
+    });
+</script>
+<!-- animetion -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
 </html>
