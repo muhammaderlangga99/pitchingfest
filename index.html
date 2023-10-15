@@ -44,7 +44,7 @@
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
-                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-300 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a href="#"
                             class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
@@ -127,14 +127,14 @@
     <!-- end header -->
 
     <!-- introducing -->
-    <section class="grid lg:grid-cols-5 gap-3 max-w-6xl mt-20 lg:mt-0 m-auto font-poppins lg:h-screen overflow-hidden">
-        <div class="lg:col-span-2 p-5 relative">
+    <section class="grid lg:grid-cols-5 gap-3 max-w-6xl mt-20 lg:mt-0 m-auto font-poppins lg:h-[80vh] overflow-hidden">
+        <div class="lg:col-span-2 p-5 relative my-auto">
             <img src="public/img/blue-header.svg" class="absolute blur-2xl w-48" alt="">
             <div class="boxes absolute w-full h-3/6"></div>
             <img src="public/img/logo.png" class="w-20 stroke-red-400" alt="">
             <h1 id="intro-header" class="intro-header font-bold backdrop-blur-xl text-gray-900 dark:text-white mt-5 text-6xl lg:text-7xl"></h1>
         </div>
-        <div class="lg:col-span-3 text-slate-500 flex flex-col justify-center gap-y-5 p-5">
+        <div class="lg:col-span-3 text-slate-500 flex flex-col gap-y-5 p-5 my-auto">
             <p class="font-medium lg:p-5 rounded-xl tracking-wide">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum eum inventore magni doloribus possimus, quo sed esse odio molestiae soluta, praesentium optio cumque tempora! Laudantium, distinctio? Esse, harum explicabo!
             </p>
@@ -144,6 +144,136 @@
         </div>
     </section>
     <!-- end introducing -->
+
+    <!-- goal -->
+    <section id="goal">
+        <div class="max-w-6xl m-auto font-poppins p-5 lg:h-[120vh] flex flex-col justify-center mt-20 lg:mt-0">
+            <div class="md:w-2/3 lg:w-1/2">
+                <i class="bi bi-stars text-4xl text-amber-300"></i>
+                    <path fill-rule="evenodd"
+                        d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                        clip-rule="evenodd" />
+                </svg>
+    
+                <h2 class="my-8 text-2xl font-bold text-black md:text-4xl">
+                    A technology-first approach to payments
+                    and finance
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                    ad ipsum pariatur autem, fugit laborum in atque amet obcaecati? Nisi minima aspernatur, quidem nulla
+                    cupiditate nam consequatur eligendi magni adipisci.</p>
+            </div>
+            <div
+                class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-300 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+                <div
+                    class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512"
+                            height="512" alt="burger illustration" />
+    
+                        <div class="space-y-2">
+                            <h5
+                                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                First feature
+                            </h5>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                            </p>
+                        </div>
+                        <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                            <span class="text-sm">Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                <path fill-rule="evenodd"
+                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" class="w-12" width="512"
+                            height="512" alt="burger illustration" />
+    
+                        <div class="space-y-2">
+                            <h5
+                                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                Second feature
+                            </h5>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                            </p>
+                        </div>
+                        <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                            <span class="text-sm">Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                <path fill-rule="evenodd"
+                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" class="w-12" width="512"
+                            height="512" alt="burger illustration" />
+    
+                        <div class="space-y-2">
+                            <h5
+                                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                Third feature
+                            </h5>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                            </p>
+                        </div>
+                        <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                            <span class="text-sm">Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                <path fill-rule="evenodd"
+                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="group relative bg-gray-50 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-00/10">
+                    <div
+                        class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" class="w-12" width="512"
+                            height="512" alt="burger illustration" />
+    
+                        <div class="space-y-2">
+                            <h5
+                                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                More features
+                            </h5>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                            </p>
+                        </div>
+                        <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                            <span class="text-sm">Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                <path fill-rule="evenodd"
+                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end goal -->
 
 <!-- typed js -->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
