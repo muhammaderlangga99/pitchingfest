@@ -1,0 +1,48 @@
+:root {
+  --marquee-speed: 40s;
+  --marquee-hover-offset: -50px;
+  --marquee-hover-transition-speed: .7s;
+  --marquee-fade-edges: 30%;
+}
+
+
+.marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000 var(--marquee-fade-edges), #000 calc(100% - var(--marquee-fade-edges)), rgba(0, 0, 0, 0) 100%);
+          mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000 var(--marquee-fade-edges), #000 calc(100% - var(--marquee-fade-edges)), rgba(0, 0, 0, 0) 100%);
+}
+.marquee,
+.marquee > div {
+  display: flex;
+  white-space: nowrap;
+  gap: 30px;
+}
+.marquee > div {
+  -webkit-animation: animate-marquee var(--marquee-speed) infinite linear;
+          animation: animate-marquee var(--marquee-speed) infinite linear;
+  transition: var(--marquee-hover-transition-speed) margin-left ease-out;
+  will-change: transform, margin-left;
+}
+.marquee:hover > div {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  margin-left: var(--marquee-hover-offset);
+}
+
+@-webkit-keyframes animate-marquee {
+  0% {
+    transform: translateX(0%) translateZ(0);
+  }
+  100% {
+    transform: translateX(-100%) translateZ(0);
+  }
+}
+
+@keyframes animate-marquee {
+  0% {
+    transform: translateX(0%) translateZ(0);
+  }
+  100% {
+    transform: translateX(-100%) translateZ(0);
+  }
+}
