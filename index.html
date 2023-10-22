@@ -10,8 +10,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <!-- animetion -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- marquee -->
+    <!-- css -->
     <link rel="stylesheet" href="public/css/marquee.css">
+    <link rel="stylesheet" href="public/css/scroll.css">
     <style>
         .boxes {
             opacity: 0.080;
@@ -31,8 +32,8 @@
                 <span class="self-center text-xl font-semibold whitespace-nowrap font-poppins hidden lg:flex  text-slate-800">Piching festival</span>
             </a>
             <div class="flex md:order-2">
-                <a href="public/booklet.pdf" type="button"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-3 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read Our Proposals</a>
+                <a href="public/proposal.pdf" target="_blank"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-3 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read Proposal</a>
                 <button data-collapse-toggle="navbar-sticky" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
@@ -57,6 +58,10 @@
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Event</a>
                     </li>
                     <li>
+                        <a href="gallery.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
+                    </li>
+                    <li>
                         <a href="#"
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">News media</a>
                     </li>
@@ -75,7 +80,7 @@
         <section class="absolute lg:h-screen lg:mt-0 -z-20 w-full flex items-center justify-around boxes bg-transparent overflow-hidden"></section>
         <section class="absolute lg:h-screen mt-20 lg:mt-0 w-full flex items-center justify-evenly z-0 bg-transparent overflow-hidden">
             <!-- <img src="public/img/red-header.svg" class="blur-xl w-48 opacity-25 lg:opacity-40 lg:translate-y-40 z-10"> -->
-            <img src="public/img/orange-header.svg" class="blur-xl w-48 opacity-25 lg:opacity-80" alt="">
+            <img src="public/img/orange-header.svg" class="blur-xl w-48 opacity-25 lg:opacity-100" alt="">
             <img src="public/img/blue-header.svg" class="blur-xl w-48 lg:-translate-y-52 opacity-30 lg:opacity-75" alt="">
         </section>
         <div class="py-8 px-4 m-auto max-w-screen-xl text-center lg:py-16 z-30">
@@ -87,7 +92,7 @@
                     class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-blue-600 rounded-full bg-blue-100 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 hover:text-blue-50">
                     download proposal
                     <i class="bi bi-arrow-down-short ml-2"></i>
-                <a href="#intro"
+                <a href="event.html"
                     class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-full border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 bg-white">
                     Explore 
                 </a>
@@ -96,27 +101,27 @@
             
             <div class="flex flex-wrap justify-center lg:gap-x-14 gap-x-14 p-3 gap-y-8 items-center backdrop-blur-lg">
                 <div
-                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="100">
+                    class="w-28 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="100">
                     <img src="public/img/aqua.png" alt="aqua" />
                 </div>
                 <div
-                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="150">
+                    class="w-28 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="150">
                     <img src="public/img/indosat.png" alt="indosat" />
                 </div>
                 <div
-                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="200">
+                    class="w-28 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="200">
                     <img src="public/img/mayora.png" alt="mayora" />
                 </div>
                 <div
-                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="250">
+                    class="w-28 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="250">
                     <img src="public/img/nestle.png" alt="nestle" class="w-20" />
                 </div>
                 <div
-                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="300">
+                    class="w-28 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="300">
                     <img src="public/img/sidomuncul.png" alt="tokopedia" />
                 </div>
                 <div
-                    class="w-28 grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="350">
+                    class="w-28 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="350">
                     <img src="public/img/panasonic.png" alt="panasonic" />
                 </div>
                 <div
@@ -129,39 +134,32 @@
     <!-- end header -->
 
     <!-- introducing -->
-    <section id="intro" class="grid lg:grid-cols-5 gap-3 max-w-6xl mt-20 lg:mt-0 m-auto font-poppins lg:h-[70vh] overflow-hidden">
-        <div class="lg:col-span-2 p-5 relative my-auto">
-            <img src="public/img/blue-header.svg" class="absolute blur-2xl w-48" alt="">
-            <div class="boxes absolute w-full h-3/6"></div>
-            <img src="public/img/logo.png" class="w-20 stroke-red-400" alt="">
-            <h1 id="intro-header" class="intro-header font-bold backdrop-blur-xl text-gray-900 dark:text-white mt-5 text-5xl"></h1>
-        </div>
-        <div class="lg:col-span-3 text-slate-600 flex flex-col gap-y-5 p-5 my-auto">
-            <p class="font-medium lg:p-5 rounded-xl tracking-normal" data-aos="fade-up">
-                Selamat datang di Pitching Festival Series 2, acara yang sangat dinantikan dalam dunia bisnis maupun industri hiburan
-                dan kreatif! Pitching Festival Series 2 hadir dengan semangat yang
-                lebih besar, ide-ide yang lebih segar, dan peluang kolaborasi yang lebih menarik.
+    <section class="max-w-6xl m-auto px-3 lg:px-0" data-aos="fade-up">
+        <div class="m-auto border border-slate-500 rounded-3xl font-poppins p-6 space-y-6">
+            <h2 class="text-4xl font-bold text-center">Introdution pitching festival</h2>
+            <p class="font-medium tracking-wide lg:text-justify">
+                Teknososiopreneur menjadi salah satu solusi dari permasalahan yang berkaitan dengan sosial lingkungan saat ini. Dalam
+                konsep ini, seorang individu atau kelompok individu menggabungkan kemampuan bisnis dan keahlian teknologi dalam
+                membangun suatu usaha yang dapat menjawab permasalahan meliputi: perubahan iklim, kemiskinan, ketidaksetaraan sosial,
+                dan ketidaksetaraan akses terhadap teknologi. Penggunaan teknologi yang bijaksana dan berkelanjutan dapat menjadi solusi
+                nyata untuk banyak tantangan global yang dihadapi umat manusia saat ini.
             </p>
-            <p class="font-medium lg:p-5 rounded-xl tracking-normal" data-aos="fade-up" data-aos-delay="50">
-                Pitching Festival Series 2 adalah sebuah platform yang dirancang untuk para Pelajar terkhususnya SMA/SMK dan juga
-                Mahasiswa untuk mempresentasikan ide-ide brilian mereka kepada para pemangku kepentingan industri, investor, dan pemirsa
-                potensial.
-            </p>
+
+            <p class="font-medium tracking-wide lg:text-justify">Sebagai salah satu universitas yang mengusung tentang Teknososiopreneur dalam kurikulum pembelajaran, Universitas
+            Trilogi juga memiliki Inkubator Bisnis Universitas Trilogi (INBISTRO) di bawah Biro Inovasi dan Kewirausahaan memiliki
+            komitmen dalam mengembangkan kewirausahaan berbasis penguasaan teknologi, kemampuan kolaborasi, dan kreativitas serta
+            adaptif dalam membangun potensi diri (kemandirian) melalui pengembangan ide bisnis yang berkontribusi terhadap
+            keberlanjutan lingkungan dan sosial.</p>
         </div>
     </section>
     <!-- end introducing -->
 
     <!-- goal -->
     <section id="goal">
-        <div class="max-w-6xl m-auto font-poppins p-5 lg:h-[110vh] flex flex-col justify-center mt-20 lg:mt-0">
+        <div class="h-80 w-80 bg-amber-400 absolute rounded-full blur-3xl right-0 -z-20 opacity-25"></div>
+        <div class="max-w-6xl m-auto font-poppins p-5 lg:h-[110vh] flex flex-col justify-center mt-20 lg:mt-0 overflow-hidden">
             <div class="md:w-2/3 lg:w-1/2 relative">
                 <i class="bi bi-stars text-4xl text-amber-300"></i>
-                    <path fill-rule="evenodd"
-                        d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
-                        clip-rule="evenodd" />
-                </svg>
-                <img src="public/img/orange-header.svg" class="absolute opacity-30 lg:opacity-80 right-0 blur-2xl w-48" alt="">
-                <div class="boxes absolute w-full h-3/6 right-0"></div>
                 <h2 class="my-8 font-bold text-black text-4xl" data-aos="fade-up">
                     Tujuan yang ingin kami capai
                 </h2>
@@ -169,21 +167,21 @@
                 konsep kreatif dan realisasi proyek.</p>
             </div>
             <div
-                class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-300 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+                class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl text-gray-600 sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3">
                 <div
                     class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
                     <div class="relative space-y-8 py-12 p-8"  data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512"
-                            height="512" alt="burger illustration" />
+                        <img src="public/img/skill.png" class="w-20" width="512"
+                        height="512" alt="burger illustration" />
     
                         <div class="space-y-2">
                             <h5
                                 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                                Wawasan Baru
+                                Meningkatkan kompetensi
                             </h5>
-                            <p class="text-gray-600 dark:text-gray-300 text-xs tracking-wide">
-                                Kegiatan ini akan membuka peluang baru untuk memperluas wawasan Anda dalam bidang tertentu. Ini adalah kesempatan untuk
-                                belajar sesuatu yang berbeda dan menarik.
+                            <p class="text-gray-600 dark:text-gray-300 text-sm tracking-wide">
+                                mengembangkan skill generasi muda dalam hal ini siswa dan mahasiswa dalam berwirausaha berbasis sosial, lingkungan, dan teknologi
+                                informasi.
                             </p>
                         </div>
                     </div>
@@ -191,17 +189,16 @@
                 <div
                     class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
                     <div class="relative space-y-8 py-12 p-8"  data-aos="fade-up" data-aos-delay="150">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" class="w-12" width="512"
-                            height="512" alt="burger illustration" />
-    
+                        <img src="public/img/idea.png" class="w-20" width="512"
+                            height="512" alt="burger illustration" />   
+                        <!-- Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> -->
                         <div class="space-y-2">
                             <h5
                                 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                                Koneksi dan Jaringan
+                                Mendorong ide kreatif
                             </h5>
-                            <p class="text-gray-600 dark:text-gray-300 text-xs tracking-wide">
-                                Event ini merupakan platform yang bagus untuk berkenalan dengan orang-orang baru, membangun hubungan profesional, dan
-                                memperluas jaringan Anda.
+                            <p class="text-gray-600 dark:text-gray-300 text-sm tracking-wide">
+                                mendorong inovasi dari generasi muda dalam berwirausaha berbasis sosial, lingkungan, dan teknologi informasi.
                             </p>
                         </div>
                     </div>
@@ -209,36 +206,17 @@
                 <div
                     class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
                     <div class="relative space-y-8 py-12 p-8"  data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" class="w-12" width="512"
+                        <img src="public/img/kolaborasi.png" class="w-20" width="512"
                             height="512" alt="burger illustration" />
-    
+                        <!-- Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> -->
                         <div class="space-y-2">
                             <h5
                                 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                                Inspirasi
+                                Kolaborasi
                             </h5>
-                            <p class="text-gray-600 dark:text-gray-300 text-xs tracking-wide">
-                                pembicara yang inspiratif atau cerita sukses dari individu yang
-                                menginspirasi, yang dapat memotivasi Anda untuk mencapai tujuan Anda
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-00/10">
-                    <div
-                        class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white" data-aos="fade-up" data-aos-delay="300">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" class="w-12" width="512"
-                            height="512" alt="burger illustration" />
-    
-                        <div class="space-y-2">
-                            <h5
-                                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                                Pengakuan dan Penghargaan
-                            </h5>
-                            <p class="text-gray-600 dark:text-gray-300 text-xs tracking-wide">
-                                Beberapa event mungkin mengadakan penghargaan atau kompetisi yang dapat memungkinkan Anda untuk mendapatkan pengakuan
-                                atas prestasi atau kontribusi Anda.
+                            <p class="text-gray-600 dark:text-gray-300 text-sm tracking-wide">
+                                Meningkatkan motivasi dan keterlibatan generasi muda berkolaborasi dalam membangun sebuah usaha berbasis sosial,
+                                lingkungan, dan teknologi informasi.
                             </p>
                         </div>
                     </div>
@@ -249,34 +227,39 @@
     <!-- end goal -->
 
     <!-- marquee -->
-    <section class="lg:h-[20vh] flex items-center py-10 lg:py-0">
-        <div class="marquee text-6xl font-poppins font-bold italic">
+    <section class="lg:h-[20vh] hidden lg:flex items-center py-10 lg:py-0">
+        <div class="marquee text-8xl font-poppins font-bold italic">
             <div>
-                <div>Tertarik untuk membawa ide-ide inovatif Anda ke tingkat berikutnya?</div>
-                <div>Bergabunglah dengan kami di acara pitching kami!</div>
-                <div>kesempatan sempurna untuk memamerkan ide-ide Anda, mendapatkan umpan balik dari para ahli, dan memenangkan hadiah!</div>
+                <div><span class="mr-5">Pitching,</span> <span>Teknoday,</span> </div>
+                <div><img src="public/img/logo.png" class="w-20 inline-block mr-1" alt=""> <span class="mr-20">Jadilah Interpreneur!</span></div>
+                <div>Driving Change 2023.</div>
             </div>
         
-            <!-- This clone can be coded using JS, as the number of clones depends on both the text width and screen size. -->
+            <!-- This clone can be coded using JS, as the number of clones depends on both the text width and screen size, -->
             <div>
-                <div>Tertarik untuk membawa ide-ide inovatif Anda ke tingkat berikutnya?</div>
-                <div>Bergabunglah dengan kami di acara pitching kami!</div>
-                <div>kesempatan sempurna untuk memamerkan ide-ide Anda, mendapatkan umpan balik dari para ahli, dan memenangkan
-                hadiah!</div>
+                <div><span class="mr-5">Pitching,</span> <span>Teknoday,</span> </div>
+                <div><img src="public/img/logo.png" class="w-20 inline-block mr-1" alt=""> <span class="mr-20">Jadilah Interpreneur!</span></div>
+                <div>Driving Change 2023.</div>
             </div>
         </div>
     </section>
     <!-- end marquee -->
 
     <!-- event -->
-    <section class="py-20 font-poppins m-auto max-w-6xl px-5 lg:px-0 grid grid-cols-5 gap-10">
+    <section class="py-16 lg:pt-32 lg:pb-40 font-poppins m-auto max-w-6xl px-5 lg:px-0 grid grid-cols-5 gap-10">
+        <div class="h-80 w-80 bg-blue-400 absolute rounded-full blur-3xl left-0 -z-20 opacity-25"></div>
         <div class="m-auto col-span-5 md:col-span-2 space-y-7">
-            <i class="bi bi-rocket-takeoff text-2xl text-blue-600" data-aos="fade-up"></i>
             <h2 class="text-4xl font-bold" data-aos="fade-up">Ikuti keseruannya di event kami!</h2>
-            <p class="font-light tracking-wide leading-relaxed" data-aos="fade-up" data-aos-delay="50">Acara ini menawarkan berbagai kegiatan seru, termasuk Perlombaan Pitching, Thecno Day, dan pameran produk mahasiswa
+            <p class="font-light tracking-wide leading-relaxed" data-aos="fade-up">Acara ini menawarkan berbagai kegiatan seru, termasuk Perlombaan Pitching, Thecno Day, dan pameran produk mahasiswa
             Universitas Trilogi.</p>
 
-            <a href="event.html" class="text-blue-600 font-medium inline-block hover:underline" data-aos="fade-up" data-aos-delay="100">Explore sekarang <i class="bi bi-arrow-right ml-2"></i></a>
+            <a href="#listEvent" class="text-blue-600 font-medium w-10/12 mt-5 flex flex-col hover:underline" data-aos="fade-up">
+                <!-- <span class="">scroll now!</span> -->
+                <div class="mouse">
+                    <div class="roll"></div>
+                    <div class="rollshadow"></div>
+                </div>
+            </a>
         </div>
         <div class="col-span-5 lg:col-span-3 grid grid-cols-2 grid-rows-2 gap-3">
             <img src="public/img/IMG_8628.JPG" class="rounded-lg col-span-1" alt="" data-aos="zoom-in" data-aos-delay="250">
@@ -288,13 +271,177 @@
     </section>
     <!-- end event -->
 
+    
+    <!-- card list -->
+        <section id="listEvent" class="py-20 px-8 font-poppins">
+            <h3 class="font-bold text-4xl text-center" data-aos="fade-up">Event yang kami selenggarakan</h3>
+            <div class="container flex justify-center flex-col lg:flex-row  mx-auto py-6 mt-8">
+                <div data-aos="fade-up" class="w-full max-w-sm p-6 shadow-lg rounded-2xl bg-white mt-6 border border-gray-200 sm:m-6  dark:bg-gray-800 dark:border-gray-700">
+                    <h5 class="mb-7 text-2xl text-center font-bold text-blue-800 dark:text-gray-400">Kompetisi pitching tingkat SMA/SMK</h5>
+                    <div class="flex items-baseline text-gray-900 dark:text-white ml-5">
+                        <span class="text-2xl font-semibold">Rp</span>
+                        <span class="text-2xl font-semibold tracking-tight">50.000</span>
+                        <span class="ml-1 text-md font-medium text-gray-500 dark:text-gray-400">/tim</span>
+                    </div>
+                        <ul role="list" class="space-y-2 mt-3 mb-6">
+                            <li class="flex space-x-3 items-center">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+                                            
+                                <span class="text-sm inline-block m-auto items-center font-normal leading-tight text-gray-700 dark:text-gray-400">Peserta adalah siswa aktif dari sekolah yang sama</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+                                
+                                <span class="text-sm inline-block m-auto font-normal leading-tight text-gray-700 dark:text-gray-400">Satu tim terdiri dari 3 orang</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+                                
+                                <span class="text-sm inline-block m-auto items-center font-normal leading-tight text-gray-700 dark:text-gray-400">Setiap sekolah maksimal membawa 5-10 supporter</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                
+                                <span class="text-sm inline-block m-auto items-center font-normal leading-tight text-gray-700 dark:text-gray-400">Peserta wajib mengunggah Twibbon di instagram</span>
+                            </li>
+                        </ul>
+
+                        
+                        <div class="flex gap-3">
+                            <a href="event.html" type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center shadow-lg">Detail</a>
+                            <button data-modal-target="defaultModal" data-modal-toggle="defaultModalsmk" type="button" class=" bg-slate-300 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center border border-slate-300">Poster</button>
+                        </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" class="w-full max-w-sm p-6 shadow-lg rounded-2xl bg-white mt-6 border border-gray-200 sm:m-6  dark:bg-gray-800 dark:border-gray-700">
+                    <h5 class="mb-7 text-2xl text-center font-bold text-blue-800 dark:text-gray-400">Kompetisi pitching tingkat Universitas</h5>
+                    <div class="flex items-baseline text-gray-900 dark:text-white ml-5">
+                        <span class="text-2xl font-semibold">Rp</span>
+                        <span class="text-2xl font-semibold tracking-tight">100.000</span>
+                        <span class="ml-1 text-md font-medium text-gray-700 dark:text-gray-400">/tim</span>
+                    </div>
+                        <ul role="list" class="space-y-2 mt-3 mb-6">
+                            <li class="flex space-x-3 items-center">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+                                            
+                                <span class="text-sm inline-block m-auto items-center font-normal leading-tight text-gray-700 dark:text-gray-400">Peserta mahasiswa aktif dari universitas yang sama</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+                                
+                                <span class="text-sm inline-block m-auto font-normal leading-tight text-gray-700 dark:text-gray-400">Peserta mahasiswa aktif dari universitas yang sama</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+                                
+                                <span class="text-sm inline-block m-auto items-center font-normal leading-tight text-gray-700 dark:text-gray-400">Peserta Wajib mengumpulkan prototype yang telah ditentukan</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                
+                                <span class="text-sm inline-block m-auto items-center font-normal leading-tight text-gray-700 dark:text-gray-400">Peserta wajib merepost postingan di instagram @pitchfest_trilogi</span>
+                            </li>
+                        </ul>
+
+                        
+                        <div class="flex gap-3">
+                            <a href="event.html" type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center shadow-lg">Detail</a>
+                            <button data-modal-target="defaultModal" data-modal-toggle="defaultModalkampus" type="button"
+                                class=" bg-slate-300 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center border border-slate-300">Poster</button>
+                        </div>
+
+                        <div id="popup-modal" tabindex="-1"
+                            class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <img src="public/img/smk.png" class="w-[550px]" alt="">
+                        </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="150" class="w-full max-w-sm p-6 shadow-lg rounded-2xl bg-white mt-6 border border-gray-200 sm:m-6  dark:bg-gray-800 dark:border-gray-700">
+                    <h5 class="mb-7 text-2xl text-center font-bold text-blue-800 dark:text-gray-400">Event bazar <br> technoday</h5>
+                    <div class="flex items-baseline text-gray-900 dark:text-white ml-5">
+                        <span class="text-2xl font-semibold">Rp</span>
+                        <span class="text-2xl font-semibold tracking-tight">50.000</span>
+                        <span class="ml-1 text-md font-medium text-gray-700 dark:text-gray-400">/tim</span>
+                    </div>
+                        <ul role="list" class="space-y-2 mt-3 mb-6">
+                            <li class="flex space-x-3 items-center">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+                                            
+                                <span class="text-sm inline-block m-auto items-center font-normal leading-tight text-gray-700 dark:text-gray-400">Peserta adalah siswa aktif dari sekolah yang sama</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+                                
+                                <span class="text-sm inline-block m-auto font-normal leading-tight text-gray-700 dark:text-gray-400">Satu tim terdiri dari 3 orang</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+                                
+                                <span class="text-sm inline-block m-auto items-center font-normal leading-tight text-gray-700 dark:text-gray-400">Setiap sekolah maksimal membawa 5-10 supporter</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+                                
+                                <span class="text-sm inline-block m-auto items-center font-normal leading-tight text-gray-700 dark:text-gray-400">Peserta wajib mengunggah Twibbon di instagram</span>
+                            </li>
+                        </ul>
+
+                        
+                        <div class="flex gap-3">
+                            <a href="event.html" type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center shadow-lg">Detail</a>
+                            
+                        </div>
+
+                        <div id="popup-modal" tabindex="-1"
+                            class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <img src="public/img/smk.png" class="w-[550px]" alt="">
+                        </div>
+                </div>
+            </div>
+        </section>
+        <div class="h-80 w-80 bg-amber-400 absolute rounded-full blur-3xl right-0 -z-20 opacity-25"></div>
+
+
+        <!-- modal box!! -->
+        <div id="defaultModalsmk" tabindex="-1" aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg lg:w-10/12 m-auto shadow overflow-hidden dark:bg-gray-700">
+                    <img src="public/img/smk.png" class="object-cover m-auto" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="defaultModalkampus" tabindex="-1" aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg lg:w-10/12 m-auto shadow overflow-hidden dark:bg-gray-700">
+                    <img src="public/img/kampus.png" class="object-cover m-auto" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- end modal box!! -->
+
+    <!-- end event -->
+
     <!-- footer -->
-    <footer class="bg-white dark:bg-gray-900 mt-32 font-poppins">
+    <footer class="mt-32 font-poppins">
         <div class="mx-auto w-full max-w-screen-xl">
             <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <ul class="text-gray-700 dark:text-gray-400 font-medium">
                         <li class="mb-4">
                             <a href="#" class=" hover:underline">About</a>
                         </li>
@@ -311,7 +458,7 @@
                 </div>
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <ul class="text-gray-700 dark:text-gray-400 font-medium">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Discord Server</a>
                         </li>
@@ -328,7 +475,7 @@
                 </div>
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <ul class="text-gray-700 dark:text-gray-400 font-medium">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Privacy Policy</a>
                         </li>
@@ -342,7 +489,7 @@
                 </div>
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <ul class="text-gray-700 dark:text-gray-400 font-medium">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">iOS</a>
                         </li>
@@ -359,7 +506,7 @@
                 </div>
             </div>
             <div class="px-4 py-6 md:flex md:items-center md:justify-between">
-                <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a
+                <span class="text-sm text-gray-700 dark:text-gray-300 sm:text-center">© 2023 <a
                         href="https://www.instagram.com/pitchfest_trilogi/">Pitching Fest 2023</a>. All Rights Reserved.
                 </span>
                 <div class="flex mt-4 space-x-5 sm:justify-center md:mt-0">
