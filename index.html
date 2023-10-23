@@ -79,12 +79,15 @@
     <section class="bg-transparent flex lg:h-[110vh] mt-20 lg:mt-0 capitalize overflow-hidden">
         <section class="absolute lg:h-screen lg:mt-0 -z-20 w-full flex items-center justify-around boxes bg-transparent overflow-hidden"></section>
         <section class="absolute lg:h-screen mt-20 lg:mt-0 w-full flex items-center justify-evenly z-0 bg-transparent overflow-hidden">
-            <!-- <img src="public/img/red-header.svg" class="blur-xl w-48 opacity-25 lg:opacity-40 lg:translate-y-40 z-10"> -->
             <img src="public/img/orange-header.svg" class="blur-xl w-48 opacity-25 lg:opacity-100" alt="">
             <img src="public/img/blue-header.svg" class="blur-xl w-48 lg:-translate-y-52 opacity-30 lg:opacity-75" alt="">
         </section>
+        <section class="absolute hidden lg:h-screen mt-20 lg:mt-0 w-full sm:flex items-center justify-around z-40 bg-transparent overflow-hidden">
+            <img src="public/img/logo1.png" class="w-14 animate-logo" alt="" data-aos="fade-up">
+            <img src="public/img/logo1.png" class="w-14 animate-logo trans -mt-96" alt="" data-aos="fade-up">
+        </section>
         <div class="py-8 px-4 m-auto max-w-screen-xl text-center lg:py-16 z-30">
-            <p class="text-blue-400 capitalize font-medium mb-3"><img src="public/img/trilogi.png" class="m-auto w-8 mr-3 inline" alt="Pitching Fertival">Part of the trilogi university</p>
+            <p class="text-blue-400 capitalize font-medium mb-3 font-poppins"><img src="public/img/trilogi.png" class="m-auto w-8 mr-3 inline" alt="Pitching Fertival">Part of the trilogi university</p>
             <h1 class="mb-4 lg:p-5 inline-block text-3xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white bg-opacity-95 backdrop-blur-xl"  data-aos="fade-up" da>Technosociopreneurship: Shaping a Sustainable Future</h1>
             <p id="element" class="text-sm inline-block items-center justify-center text-gray-700 lg:text-xl tracking-wide dark:text-gray-400 caret-slate-300 font-mono">Membentuk Masa Depan yang Berkelanjutan</p>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 mt-8">
@@ -97,12 +100,11 @@
                     Explore 
                 </a>
             </div>
-            <h3 class="text-center text-blue-700 font-medium mt-8 mb-5">Our Sponsor</h3>
             
-            <div class="flex flex-wrap justify-center lg:gap-x-14 gap-x-14 p-3 gap-y-8 items-center backdrop-blur-lg">
+            <div class="flex flex-wrap justify-center mt-10 lg:gap-x-14 gap-x-14 p-3 gap-y-8 items-center backdrop-blur-lg">
                 <div
                     class="w-28 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="100">
-                    <img src="public/img/aqua.png" alt="aqua" />
+                    <img src="public/img/yakult.png" alt="aqua" />
                 </div>
                 <div
                     class="w-28 transition-all duration-300 overflow-hidden object-cover flex items-center justify-center" data-aos="fade-up" data-aos-delay="150">
@@ -134,7 +136,7 @@
     <!-- end header -->
 
     <!-- introducing -->
-    <section class="max-w-6xl m-auto px-3 lg:px-0" data-aos="fade-up">
+    <section class="max-w-6xl m-auto px-3 mb-20 lg:px-0" data-aos="fade-up">
         <h2 class="text-4xl font-bold text-center">Introduction pitching festival</h2>
         <div class="m-auto flex flex-col lg:flex-row gap-10 rounded-3xl font-poppins p-6 mt-5">
             <p class="font-normal leading-relaxed tracking-wide lg:text-justify" data-aos="fade-up">
@@ -155,8 +157,8 @@
     <!-- end introducing -->
 
     <!-- goal -->
-    <section id="goal">
-        <div class="h-80 w-80 bg-amber-400 absolute rounded-full blur-3xl right-0 -z-20 opacity-25"></div>
+    <section class="overflow-x-hidden">
+        <div class="h-80 w-80 bg-green-400 absolute rounded-full blur-3xl right-0 -z-20 opacity-20"></div>
         <div class="max-w-6xl m-auto font-poppins p-5 lg:h-[110vh] flex flex-col justify-center mt-32 lg:mt-0 overflow-hidden">
             <div class="md:w-2/3 lg:w-1/2 relative">
                 <i class="bi bi-stars text-4xl text-amber-300"></i>
@@ -273,7 +275,7 @@
 
     
     <!-- card list -->
-        <section id="listEvent" class="py-24 px-8 font-poppins">
+        <section id="listEvent" class="py-16 px-8 font-poppins">
             <h3 class="font-bold text-4xl text-center" data-aos="fade-up">Event yang kami selenggarakan</h3>
             <div class="container flex justify-center flex-col lg:flex-row  mx-auto py-6 mt-8">
                 <div data-aos="fade-up" class="w-full max-w-sm p-6 shadow-lg rounded-2xl bg-white mt-6 border border-gray-200 sm:m-6  dark:bg-gray-800 dark:border-gray-700">
@@ -406,7 +408,7 @@
                 </div>
             </div>
         </section>
-        <div class="h-80 w-80 bg-amber-400 absolute rounded-full blur-3xl right-0 -z-20 opacity-25"></div>
+        <!-- <div class="h-80 w-80 bg-amber-400 absolute rounded-full blur-3xl right-0 -z-20 opacity-25"></div> -->
 
 
         <!-- modal box!! -->
@@ -434,6 +436,66 @@
         <!-- end modal box!! -->
 
     <!-- end event -->
+
+    <!-- benefit -->
+    <section class="max-w-6xl m-auto py-24 px-3 lg:px-0 font-poppins">
+        <p class="text-blue-600 font-medium text-center">Benefit.</p>
+        <h1 class="font-bold text-4xl text-center">Apa yang kamu dapatkan?</h1>
+        <ol class="items-center sm:flex mt-10 space-y-10 lg:space-y-0">
+            <li class="relative mb-6 sm:mb-0">
+                <div class="flex items-center">
+                    <div
+                        class="z-10 flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <i class="bi bi-people text-xl text-blue-950"></i>
+                    </div>
+                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div class="mt-3 sm:pr-8">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Benefit satu</h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on
+                        December 2, 2021</time>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components
+                        and interactive elements.</p>
+                </div>
+            </li>
+            <li class="relative mb-6 sm:mb-0">
+                <div class="flex items-center">
+                    <div
+                        class="z-10 flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <i class="bi bi-chat-left-text text-lg text-blue-950"></i>
+
+                    </div>
+                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div class="mt-3 sm:pr-8">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Benefit dua</h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on
+                        December 23, 2021</time>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components
+                        and interactive elements.</p>
+                </div>
+            </li>
+            <li class="relative mb-6 sm:mb-0">
+                <div class="flex items-center">
+                    <div
+                        class="z-10 flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <i class="bi bi-gift text-xl text-blue-950"></i>
+
+                    </div>
+                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div class="mt-3 sm:pr-8">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Benefit tiga</h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on
+                        January 5, 2022</time>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components
+                        and interactive elements.</p>
+                </div>
+            </li>
+        </ol>
+
+    </section>
+    <!-- end benefit -->
 
     <!-- footer -->
     <footer class="mt-32 font-poppins">
