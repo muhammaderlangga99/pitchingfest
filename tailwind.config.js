@@ -13,7 +13,7 @@ module.exports = {
       keyframes: {
         logo: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-7px)' },
+          '50%': { transform: 'translateY(-10px)' },
         }
       }
     },
