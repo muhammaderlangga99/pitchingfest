@@ -11,9 +11,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <!-- animetion -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="public/css/marquee.css">
     <link rel="stylesheet" href="public/css/scroll.css">
+    <link rel="stylesheet" href="public/css/swiper.css">
     <style>
         .boxes {
             opacity: 0.080;
@@ -468,9 +471,42 @@
 
     <!-- Akhir Section card pendaftaran -->
 
+    <!-- Update Section TALKSHOW -->
+
+    <section class="py-12 px-5 mx-auto sm:px-16">
+        <div class="flex w-full h-40 sm:h-80 border-black border rounded-lg py-10">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+
+    <!-- Akhir section -->
+
     <!-- Section jadwal tabel -->
 
-    <section id="tabeljadwal" class="px-4">
+    <section id="tabeljadwal" class="px-4 mb-10">
         <div class="container w-full  h-72 mx-auto 2xl:px-24">
             <div class="relative overflow-x-auto border border-gray-300 rounded-lg ">
                 <table class="w-full text-sm text-left text-gray-700">
@@ -696,6 +732,37 @@
         new Typewriter('#intro-header', {
             strings: ['Introdution Pitching Festival'],
             autoStart: true,
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+        }
         });
     </script>
 </body>
