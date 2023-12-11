@@ -134,8 +134,15 @@
                     <ul class="text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600"
                         id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
                         <li class="w-full">
+                            <button id="talk-tab" data-tabs-target="#talk" type="button" role="tab"
+                                aria-controls="talk" aria-selected="true"
+                                class="inline-block w-full h-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
+                                Talk Show
+                            </button>
+                        </li>
+                        <li class="w-full">
                             <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab"
-                                aria-controls="stats" aria-selected="true"
+                                aria-controls="stats" aria-selected="false"
                                 class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Pitching
                                 Competition Universitas
                             </button>
@@ -155,6 +162,86 @@
                         </li>
                     </ul>
                     <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
+                        <div class="hidden p-4  bg-white rounded-lg md:p-8 dark:bg-gray-800" id="talk" role="tabpanel"
+                            aria-labelledby="talk-tab">
+                            <div class="flex flex-wrap">
+                                <div class="flex flex-wrap w-full h-full">
+                                    <div class="flex w-full">
+                                        <h1 class="mb-2 font-semibold text-lg">4 Januari 2024, Narasumber :</h1>
+                                    </div>
+                                    <ul role="list" class="space-y-2 text-gray-500">
+                                        <li class="flex space-x-2 items-center">
+                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                            </svg>
+                                            <span class="leading-tight text-sm">
+                                                Letnan Jenderal TNI (Purn.) H. Sutiyoso, S.H.</span>
+                                        </li>
+                                        <li class="flex space-x-2 items-center">
+                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                            </svg>
+                                            <span class="leading-tight text-sm">
+                                                Kemal Vivaveni</span>
+                                        </li>
+                                        <li class="flex space-x-2 items-center">
+                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                            </svg>
+                                            <span class="leading-tight text-sm">
+                                                Teuku Wisnu</span>
+                                        </li>
+
+                                    </ul>
+                                   
+                                </div>
+                                <div class="flex flex-wrap w-full h-full mt-4">
+                                    <h1 class="w-full mb-2 font-semibold text-lg ">5 Januari 2024, Narasumber :</h1>
+                                    <ul role="list" class="space-y-2 text-gray-500">
+                                        <li class="flex space-x-2 items-center">
+                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                            </svg>
+                                            <span class="leading-tight text-sm">
+                                                Wulan Ayodya<br>(Penulis & Praktisi UMKM)</span>
+                                        </li>
+                                        <li class="flex space-x-2 items-center">
+                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                            </svg>
+                                            <span class="leading-tight text-sm">
+                                                Alexander Ludi, MBA*<br>(Head of loTs & Greentech)</span>
+                                        </li>
+                                        <li class="flex space-x-2 items-center">
+                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                            </svg>
+                                            <span class="leading-tight text-sm">
+                                                Ir. Elisabeth Ratu Rante Allo, M.M, M.Si*<br>(Kepala Dinas PPUKM Prov DKI Jakarta)</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
                         <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="stats" role="tabpanel"
                             aria-labelledby="stats-tab">
                             <h2 class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Rundown
