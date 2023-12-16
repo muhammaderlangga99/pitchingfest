@@ -1,92 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon" />
     <!-- flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <!-- animetion -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- css -->
-    <link rel="stylesheet" href="public/css/marquee.css">
-    <link rel="stylesheet" href="public/css/scroll.css">
-    <link rel="stylesheet" href="public/css/swiper.css">
+    <link rel="stylesheet" href="public/css/marquee.css" />
+    <link rel="stylesheet" href="public/css/scroll.css" />
+    <link rel="stylesheet" href="public/css/swiper.css" />
     <style>
-        .boxes {
-            opacity: 0.080;
-            background-image: linear-gradient(#a6acc6 1.8px, transparent 1.8px), linear-gradient(to right, #a6acc6 1.8px, transparent 1.8px);
-            background-size: 36px 36px;
-        }
+      .boxes {
+        opacity: 0.08;
+        background-image: linear-gradient(#a6acc6 1.8px, transparent 1.8px),
+          linear-gradient(to right, #a6acc6 1.8px, transparent 1.8px);
+        background-size: 36px 36px;
+      }
     </style>
     <title>Pitching Fest</title>
-</head>
+  </head>
 
-<body class="font-poppins">
+  <body class="font-poppins">
     <!-- navbar -->
     <nav
-        class="backdrop-blur-lg fixed w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-gray-600 font-poppins">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="" class="flex items-center">
-                <img src="public/img/logo.png" class="h-12 mr-3" alt="Pitching">
-                <span
-                    class="self-center text-2xl font-semibold whitespace-nowrap font-poppins hidden lg:flex  text-slate-800">Pitching
-                    Festival</span>
-            </a>
-            <div class="flex md:order-2">
-                <a href="event.html#listEvent" target="_blank"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-3 text-center mr-3 md:mr-0  bg-gradient-to-r from-sky-500 to-indigo-500">Daftar</a>
-                <button data-collapse-toggle="navbar-sticky" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-sticky" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-            </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul
-                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-300 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <a href="index.html"
-                            class="block py-2 pl-3 text-base pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
-                    </li>
-                    <li>
-                        <a href="index.html"
-                            class="block py-2 pl-3 text-base pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                            aria-current="page">Event</a>
-                    </li>
-                    <!-- <li>
-                        <a href="talkshow.html"
-                            class="block py-2 pl-3 text-base pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Talkshow</a>
-                    </li> -->
-                    <li>
-                        <a href="gallery.html"
-                            class="block py-2 pl-3 text-base pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="organizer.html"
-                            class="block py-2 pl-3 text-base pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Organizers</a>
-                    </li>
-                    <li>
-                        <a href="contact.html"
-                            class="block py-2 pl-3 text-base pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      class="fixed top-0 left-0 z-50 w-full border-b border-gray-200 backdrop-blur-lg dark:border-gray-600 font-poppins"
+    >
+      <div
+        class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto"
+      >
+        <a href="" class="flex items-center">
+          <img src="public/img/logo.png" class="h-12 mr-3" alt="Pitching" />
+          <span
+            class="self-center hidden text-2xl font-semibold whitespace-nowrap font-poppins lg:flex text-slate-800"
+            >Pitching Festival</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <a
+            href="event.html#listEvent"
+            target="_blank"
+            class="px-5 py-3 mr-3 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 md:mr-0 bg-gradient-to-r from-sky-500 to-indigo-500"
+            >Daftar</a
+          >
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
         </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 font-medium bg-transparent border border-gray-300 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 pl-3 pr-4 text-base text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+                >Event</a
+              >
+            </li>
+            <!-- <li>
+                        <a href="talkshow.html"
+                            class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Talkshow</a>
+                    </li> -->
+            <li>
+              <a
+                href="gallery.html"
+                class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="organizer.html"
+                class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Organizers</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- end navbar -->
 
     <!-- Update Section TALKSHOW -->
+<<<<<<< HEAD
+    <h2
+      data-aos="fade-down"
+      class="inline-flex justify-center w-full gap-2 m-auto mx-auto mt-32 text-3xl font-semibold md:text-4xl md:mt-36"
+    >
+      Trilogi Talkshow
+      <span
+        class="inline-block w-3 h-3 my-auto bg-red-400 rounded-full animate-pulse"
+      ></span>
+      <i class="inline-block bi bi-mic-fill -rotate-12"></i>
+    </h2>
+    <div class="flex w-full">
+      <a
+        href="https://bit.ly/Talkshow2024"
+        target="_blank"
+        data-aos="zoom-in"
+        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium text-sm px-5 py-2.5 text-center rounded-full m-auto inline-block mt-2"
+        >daftarkan sekarang</a
+      >
+    </div>
+    <section class="px-5 mx-auto mt-10 sm:px-10 max-w-7xl" data-aos="fade-up">
+      <div class="z-20 flex w-full h-40 overflow-hidden sm:h-80 rounded-3xl">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="flex swiper-slide">
+              <img
+                src="public/img/Backdrop Audit.jpg"
+                class="max-w-5xl m-auto"
+                alt=""
+              />
+=======
     <h2 data-aos="fade-down" class="text-3xl md:text-4xl font-semibold md:mt-36 mt-32 mx-auto w-full justify-center inline-flex m-auto gap-2 ">Trilogi Talkshow <span class="w-3 h-3 rounded-full my-auto bg-red-400 inline-block animate-pulse"></span> <i class="bi bi-mic-fill -rotate-12 inline-block"></i></h2>
     <div class="w-full flex">
     <a href="https://bit.ly/Talkshow2024" target="_blank" data-aos="zoom-in"
@@ -108,17 +187,47 @@
                     </svg>
                     <span></span>
                 </div>
+>>>>>>> 127a4afbb65d395fa40f1d35ff786988d105382b
             </div>
-            <!--  -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
         </div>
+        <!--  -->
+      </div>
     </section>
     <!-- Akhir section -->
 
-
     <!-- card list -->
     <section class="mt-12">
-        <div class="h-80 w-80 bg-amber-200 absolute rounded-full blur-3xl right-0 -z-20 opacity-25"></div>
+      <div
+        class="absolute right-0 rounded-full opacity-25 h-80 w-80 bg-amber-200 blur-3xl -z-20"
+      ></div>
 
+<<<<<<< HEAD
+      <div
+        class="grid gap-8 px-4 py-8 mx-auto max-w-7xl lg:py-16 lg:grid-cols-2 lg:gap-16"
+      >
+        <div class="flex flex-col">
+          <h1
+            class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            AGENDA EVENT
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal leading-relaxed tracking-wide text-gray-800"
+          >
+            Selamat Datang di Pitching Festival 2024! Acara ini adalah
+            kesempatan luar biasa untuk menjelajahi inovasi teknologi terbaru,
+            berpartisipasi dalam kompetisi yang seru, dan mengembangkan wawasan
+            Anda. Berikut adalah agenda lengkap acara ini:
+          </p>
+=======
         <div class="py-8 px-4 mx-auto max-w-7xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
             <div class="flex flex-col">
                 <h1
@@ -383,11 +492,527 @@
 
 
             </div>
+>>>>>>> 127a4afbb65d395fa40f1d35ff786988d105382b
         </div>
+        <div data-aos-delay="100">
+          <div
+            class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <ul
+              class="text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600"
+              id="fullWidthTab"
+              data-tabs-toggle="#fullWidthTabContent"
+              role="tablist"
+            >
+              <li class="w-full">
+                <button
+                  id="talk-tab"
+                  data-tabs-target="#talk"
+                  type="button"
+                  role="tab"
+                  aria-controls="talk"
+                  aria-selected="true"
+                  class="inline-block w-full h-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+                >
+                  Talk Show
+                </button>
+              </li>
+              <li class="w-full">
+                <button
+                  id="stats-tab"
+                  data-tabs-target="#stats"
+                  type="button"
+                  role="tab"
+                  aria-controls="stats"
+                  aria-selected="false"
+                  class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+                >
+                  Pitching Competition Universitas
+                </button>
+              </li>
+              <li class="w-full">
+                <button
+                  id="about-tab"
+                  data-tabs-target="#about"
+                  type="button"
+                  role="tab"
+                  aria-controls="about"
+                  aria-selected="false"
+                  class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+                >
+                  Pitching Competition SMK/SMA
+                </button>
+              </li>
+              <li class="w-full">
+                <button
+                  id="faq-tab"
+                  data-tabs-target="#faq"
+                  type="button"
+                  role="tab"
+                  aria-controls="faq"
+                  aria-selected="false"
+                  class="inline-block w-full h-full p-4 rounded-tr-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+                >
+                  Event Techno Day
+                </button>
+              </li>
+            </ul>
+            <div
+              id="fullWidthTabContent"
+              class="border-t border-gray-200 dark:border-gray-600"
+            >
+              <div
+                class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+                id="talk"
+                role="tabpanel"
+                aria-labelledby="talk-tab"
+              >
+                <div class="flex flex-wrap">
+                  <div class="flex flex-wrap w-full h-full">
+                    <div class="flex w-full">
+                      <h1 class="mb-2 text-lg font-semibold">
+                        4 Januari 2024, Narasumber :
+                      </h1>
+                    </div>
+                    <ul role="list" class="space-y-2 text-gray-500">
+                      <li class="flex items-center space-x-2">
+                        <svg
+                          class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                          />
+                        </svg>
+                        <span class="text-sm leading-relaxed">
+                          Letnan Jenderal TNI (Purn.) H. Sutiyoso, S.H. <br />
+                          (Gubernur DKI Jakarta 1997-2007)</span
+                        >
+                      </li>
+                      <li class="flex items-center space-x-2">
+                        <svg
+                          class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                          />
+                        </svg>
+                        <span class="text-sm leading-relaxed">
+                          Kemal Vivaveni <br />
+                          (Presenter & Penyiar Radio)</span
+                        >
+                      </li>
+                      <li class="flex items-center space-x-2">
+                        <svg
+                          class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                          />
+                        </svg>
+                        <span class="text-sm leading-relaxed">
+                          Teuku Wisnu <br />
+                          (Entrepreneur)
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex flex-wrap w-full h-full mt-4">
+                    <h1 class="w-full mb-2 text-lg font-semibold">
+                      5 Januari 2024, Narasumber :
+                    </h1>
+                    <ul role="list" class="space-y-2 text-gray-500">
+                      <li class="flex items-center space-x-2">
+                        <svg
+                          class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                          />
+                        </svg>
+                        <span class="text-sm leading-relaxed">
+                          Wulan Ayodya, S. E., M. M<br />(Penulis & Praktisi
+                          UMKM)</span
+                        >
+                      </li>
+                      <li class="flex items-center space-x-2">
+                        <svg
+                          class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                          />
+                        </svg>
+                        <span class="text-sm leading-relaxed">
+                          Alexander Ludi, MBA<br />(Head of loTs &
+                          Greentech)</span
+                        >
+                      </li>
+                      <li class="flex items-center space-x-2">
+                        <svg
+                          class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                          />
+                        </svg>
+                        <span class="pb-4 text-sm leading-relaxed">
+                          William, S. E<br />(Alumni Universitas Trilogi)</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- start updated - benzo-->
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="default-modal"
+                    data-modal-toggle="default-modal"
+                    class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    type="button"
+                  >
+                    Detail
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="default-modal"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+                  >
+                    <div class="relative w-full max-w-2xl max-h-full p-4">
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-white rounded-lg shadow dark:bg-gray-700"
+                      >
+                        <!-- Modal header -->
+                        <div
+                          class="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600"
+                        >
+                          <h3
+                            class="text-xl font-semibold text-gray-900 dark:text-white"
+                          >
+                            Talkshow Technososiopreneurship #1
+                          </h3>
+                          <button
+                            type="button"
+                            class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 ms-auto dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-hide="default-modal"
+                          >
+                            <svg
+                              class="w-3 h-3"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 14 14"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                              />
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                          </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-4 space-y-4 md:p-5">
+                          <img
+                            src="public/img/talkshow-valid.jpg"
+                            class="object-cover w-full m-auto rounded-md grayscale-1"
+                            alt=""
+                          />
+                        </div>
+                        <!-- Modal footer -->
+                        <div
+                          class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600"
+                        >
+                          <button
+                            data-modal-hide="default-modal"
+                            type="button"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                          >
+                            I accept
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end updated - benzo -->
+                </div>
+              </div>
+              <div
+                class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+                id="stats"
+                role="tabpanel"
+                aria-labelledby="stats-tab"
+              >
+                <h2
+                  class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Rundown Kompetisi 4 Januari 2024:
+                </h2>
+                <!-- List -->
+                <ul role="list" class="space-y-4 text-gray-500">
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight">
+                      Registrasi peserta, Sesi Pembukaan</span
+                    >
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight"
+                      >Sambutan oleh Rektor Universitas Trilogi</span
+                    >
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight"
+                      >Kompetisi Pitching Tingkat Universitas</span
+                    >
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight">Penutupan</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+                id="about"
+                role="tabpanel"
+                aria-labelledby="about-tab"
+              >
+                <h2
+                  class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Rundown Kompetisi 5 Januari 2024:
+                </h2>
+                <!-- List -->
+                <ul role="list" class="space-y-4 text-gray-500">
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight">Registrasi Ulang Peserta</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight">Pembukaan acara</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight">Perlombaan Pitching</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight"
+                      >Pengumuman pemenang dan Penutupan
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+                id="faq"
+                role="tabpanel"
+                aria-labelledby="about-tab"
+              >
+                <h2
+                  class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Rundown Event Techno Day 5 Januari 2024:
+                </h2>
+                <!-- List -->
+                <ul role="list" class="space-y-4 text-gray-500">
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight"
+                      >Batas Pendaftaran (22 Desember 2023)</span
+                    >
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight"
+                      >Technical Meeting (23 Desember 2023)</span
+                    >
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                      />
+                    </svg>
+                    <span class="leading-tight"
+                      >Pelaksanaan Acara (4-5 Januari 2024)
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- akhir list event -->
 
     <!-- Section card pendaftaran -->
+<<<<<<< HEAD
+    <section id="listEvent" class="px-8 py-16 font-poppins">
+      <h3
+        class="text-2xl font-bold text-center text-transparent md:text-4xl bg-clip-text bg-gradient-to-r to-slate-900 from-slate-400"
+      >
+        Event yang kami selenggarakan
+      </h3>
+      <div
+        class="container flex flex-col justify-center py-6 mx-auto mt-3 lg:flex-row md:mt-8"
+      >
+        <div
+          class="w-full max-w-sm py-10 mt-6 bg-white border border-gray-200 px-7 rounded-2xl sm:m-6"
+        >
+          <h5
+            class="text-2xl font-bold text-center text-blue-800 capitalize mb-7"
+          >
+            Kompetisi pitching tingkat SMA/SMK
+          </h5>
+          <div class="flex items-baseline ml-5 text-gray-900 dark:text-white">
+            <span class="text-2xl font-semibold tracking-tight">Free</span>
+          </div>
+          <ul role="list" class="mt-3 mb-6 space-y-2">
+            <li class="flex items-center space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+              <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+=======
     <section id="listEvent" class="py-16 px-8 font-poppins">
         <h3 class="font-bold text-2xl md:text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r to-slate-900 from-slate-400">Event yang kami selenggarakan</h3>
         <div class="container flex justify-center flex-col lg:flex-row  mx-auto py-6 mt-3 md:mt-8">
@@ -401,32 +1026,56 @@
                     <li class="flex space-x-3 items-center">
                         <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
                         <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+>>>>>>> 127a4afbb65d395fa40f1d35ff786988d105382b
 
-                        <span class="text-sm inline-block m-auto items-center font-normal text-black">Peserta
-                            adalah siswa aktif dari sekolah yang sama</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
-                        <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+              <span
+                class="items-center inline-block m-auto text-sm font-normal text-black"
+                >Peserta adalah siswa aktif dari sekolah yang sama</span
+              >
+            </li>
+            <li class="flex space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+              <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
 
-                        <span class="text-sm inline-block m-auto font-normal text-black">Satu tim
-                            terdiri dari 3 orang</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
-                        <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+              <span class="inline-block m-auto text-sm font-normal text-black"
+                >Satu tim terdiri dari 3 orang</span
+              >
+            </li>
+            <li class="flex space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+              <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
 
-                        <span class="text-sm inline-block m-auto items-center font-normal text-black">Setiap
-                            tim membawa satu guru pendamping</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <i class="bi bi-dot text-5xl items-center text-blue-700"></i>
+              <span
+                class="items-center inline-block m-auto text-sm font-normal text-black"
+                >Setiap tim membawa satu guru pendamping</span
+              >
+            </li>
+            <li class="flex space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
 
-                        <span class="text-sm inline-block m-auto items-center font-normal text-black">Peserta
-                            wajib mengunggah Twibbon di instagram</span>
-                    </li>
-                </ul>
+              <span
+                class="items-center inline-block m-auto text-sm font-normal text-black"
+                >Peserta wajib mengunggah Twibbon di instagram</span
+              >
+            </li>
+          </ul>
 
+<<<<<<< HEAD
+          <div class="flex gap-3">
+            <a
+              href="https://linktr.ee/KompetisiPitchingSekolah"
+              type="button"
+              class="text-white bg-gradient-to-r from-sky-500 to-indigo-500 shadow-lg focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-xl text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+              >Daftar</a
+            >
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1ryYC2dCaTsRWWV4WU1NT--grExnU_6wE/view"
+              class="hover:bg-slate-300 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-xl text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+              >Booklet</a
+            >
+          </div>
+=======
 
                 <div class="flex gap-3">
                     <a href="https://linktr.ee/KompetisiPitchingSekolah" type="button"
@@ -535,38 +1184,213 @@
                     <img src="public/img/smk.png" class="w-[550px]" alt="">
                 </div>
             </div>
+>>>>>>> 127a4afbb65d395fa40f1d35ff786988d105382b
         </div>
+        <div
+          data-aos-delay="100"
+          class="w-full max-w-sm py-10 mt-6 bg-white border border-gray-200 px-7 rounded-2xl sm:m-6"
+        >
+          <h5
+            class="text-2xl font-bold text-center text-blue-800 capitalize mb-7"
+          >
+            Kompetisi pitching tingkat Universitas
+          </h5>
+          <div class="flex items-baseline ml-5 text-gray-900 dark:text-white">
+            <span class="text-2xl font-semibold">Rp</span>
+            <span class="text-2xl font-semibold tracking-tight">100.000</span>
+            <span class="ml-1 font-medium text-gray-700 text-md">/tim</span>
+          </div>
+          <ul role="list" class="mt-3 mb-6 space-y-1">
+            <li class="flex items-center space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+              <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+
+              <span
+                class="items-center inline-block m-auto text-sm font-normal text-black"
+                >Peserta mahasiswa aktif dari universitas yang sama</span
+              >
+            </li>
+            <li class="flex space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+              <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+
+              <span class="inline-block m-auto text-sm font-normal text-black"
+                >Satu tim terdiri dari 3 orang</span
+              >
+            </li>
+            <li class="flex space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+              <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+
+              <span
+                class="items-center inline-block m-auto text-sm font-normal text-black"
+                >Peserta Wajib mengumpulkan pitchdeck dan prototype yang telah
+                ditentukan</span
+              >
+            </li>
+            <li class="flex space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+
+              <span
+                class="items-center inline-block m-auto text-sm font-normal text-black"
+                >Peserta wajib merepost postingan di instagram
+                @pitchfest_trilogi</span
+              >
+            </li>
+          </ul>
+
+          <div class="flex gap-3">
+            <a
+              href="https://linktr.ee/PitchingUniversitas"
+              type="button"
+              class="text-white bg-gradient-to-r from-sky-500 to-indigo-500 shadow-lg focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-xl text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+              >Daftar</a
+            >
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1mXsgUlKFOAGHFcDKmpBGL1D5SwAx9wqw/view?usp=sharing"
+              class="hover:bg-slate-300 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-xl text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+              >Booklet</a
+            >
+          </div>
+
+          <div
+            id="popup-modal"
+            tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <img src="public/img/smk.png" class="w-[550px]" alt="" />
+          </div>
+        </div>
+        <div
+          data-aos-delay="150"
+          class="w-full max-w-sm py-10 mt-6 bg-white border border-gray-200 px-7 rounded-2xl sm:m-6"
+        >
+          <h5
+            class="text-2xl font-bold text-center text-blue-800 capitalize mb-7"
+          >
+            Event <br />
+            Techno Day
+          </h5>
+          <div class="flex items-baseline ml-5 text-gray-900 dark:text-white">
+            <span class="text-2xl font-semibold">Rp</span>
+            <span class="text-2xl font-semibold tracking-tight">25.000</span>
+            <span class="ml-1 font-medium text-gray-700 text-md"
+              >/tim non kompetisi</span
+            >
+          </div>
+          <ul role="list" class="mt-3 mb-10 space-y-2">
+            <li class="flex items-center space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+              <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+
+              <span
+                class="items-center inline-block m-auto text-sm font-normal text-black"
+                >Event Techno Day diikuti oleh peserta kompetisi pitching dan
+                non kompetisi</span
+              >
+            </li>
+
+            <li class="flex space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+              <!-- Mengganti path dari ceklis menjadi simbol titik hitam -->
+
+              <span
+                class="items-center inline-block m-auto text-sm font-normal text-black"
+                >Setiap tim yang mengikuti kompetisi pitching wajib membawa 5-10
+                orang supporter untuk hadir dalam pameran Techno Day</span
+              >
+            </li>
+            <li class="flex space-x-3">
+              <i class="items-center text-5xl text-blue-700 bi bi-dot"></i>
+
+              <span
+                class="items-center inline-block m-auto text-sm font-normal text-black"
+                >Fasilitas yang didapatkan : meja, kursi, stopkontak, id card
+                peserta, dan namedesk</span
+              >
+            </li>
+          </ul>
+
+          <div class="flex gap-3">
+            <a
+              href="https://linktr.ee/TechnoDay2024"
+              type="button"
+              class="text-white bg-gradient-to-r from-sky-500 to-indigo-500 shadow-lg focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-xl text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+              >Daftar</a
+            >
+            <button
+              data-modal-target="defaultModal"
+              data-modal-toggle="defaultModalTechnoDay"
+              type="button"
+              class="hover:bg-slate-300 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-xl text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+            >
+              Lihat poster
+            </button>
+          </div>
+
+          <div
+            id="popup-modal"
+            tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <img src="public/img/smk.png" class="w-[550px]" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- modal box!! -->
-    <div id="defaultModalsmk" tabindex="-1" aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative w-full max-w-2xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg lg:w-10/12 m-auto shadow overflow-hidden dark:bg-gray-700">
-                <img src="public/img/smk.png" class="object-cover m-auto" alt="">
-            </div>
+    <div
+      id="defaultModalsmk"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div
+          class="relative m-auto overflow-hidden bg-white rounded-lg shadow lg:w-10/12 dark:bg-gray-700"
+        >
+          <img src="public/img/smk.png" class="object-cover m-auto" alt="" />
         </div>
+      </div>
     </div>
 
-    <div id="defaultModalkampus" tabindex="-1" aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative w-full max-w-2xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg lg:w-10/12 m-auto shadow overflow-hidden dark:bg-gray-700">
-                <img src="public/img/kampus.png" class="object-cover m-auto" alt="">
-            </div>
+    <div
+      id="defaultModalkampus"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div
+          class="relative m-auto overflow-hidden bg-white rounded-lg shadow lg:w-10/12 dark:bg-gray-700"
+        >
+          <img src="public/img/kampus.png" class="object-cover m-auto" alt="" />
         </div>
+      </div>
     </div>
 
-    <div id="defaultModalTechnoDay" tabindex="-1" aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative w-full max-w-2xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg lg:w-10/12 m-auto shadow overflow-hidden dark:bg-gray-700">
-                <img src="public/img/TechnoDay.jpg" class="object-cover m-auto" alt="">
-            </div>
+    <div
+      id="defaultModalTechnoDay"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div
+          class="relative m-auto overflow-hidden bg-white rounded-lg shadow lg:w-10/12 dark:bg-gray-700"
+        >
+          <img
+            src="public/img/TechnoDay.jpg"
+            class="object-cover m-auto"
+            alt=""
+          />
         </div>
+      </div>
     </div>
     <!-- end modal box!! -->
 
@@ -575,6 +1399,97 @@
     <!-- Section jadwal tabel -->
 
     <section id="tabeljadwal" class="px-4 mb-20">
+<<<<<<< HEAD
+      <div class="container w-full mx-auto h-72 2xl:px-24">
+        <div
+          class="relative overflow-x-auto border border-blue-400 rounded-2xl"
+        >
+          <table class="w-full text-sm text-left text-gray-700">
+            <thead
+              class="text-xs text-white uppercase bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gray-700"
+            >
+              <tr>
+                <th scope="col" class="px-6 py-3">Event</th>
+                <th scope="col" class="px-6 py-3">Batas Pendaftaran</th>
+                <th scope="col" class="px-6 py-3">Technical Meeting</th>
+                <th scope="col" class="px-6 py-3">
+                  Pengumpulan PPT dan Poster Ide Bisnis
+                </th>
+                <th scope="col" class="px-6 py-3">Kompetisi Ide Bisnis</th>
+                <th scope="col" class="px-6 py-3">Pengumuman Pemenang</th>
+                <th scope="col" class="px-6 py-3">
+                  Pameran Karya Poster/Produk
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <th
+                  scope="row"
+                  class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Kompetisi pitching tingkat SMA/SMK
+                </th>
+                <td class="px-6 py-4">22 Desember 2023</td>
+                <td class="px-6 py-4">23 Desember 2023</td>
+                <td class="px-6 py-4">23 Desember 2023 - 3 Januari 2024</td>
+                <td class="px-6 py-4">5 Januari 2024</td>
+                <td class="px-6 py-4">5 Januari 2024</td>
+                <td class="px-6 py-4">4-5 Januari 2024</td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <th
+                  scope="row"
+                  class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Kompetisi pitching tingkat Universitas
+                </th>
+                <td class="px-6 py-4">22 Desember 2023</td>
+                <td class="px-6 py-4">23 Desember 2023</td>
+                <td class="px-6 py-4">23 Desember 2023 - 3 Januari 2024</td>
+                <td class="px-6 py-4">4 Januari 2024</td>
+                <td class="px-6 py-4">5 Januari 2024</td>
+                <td class="px-6 py-4">4-5 Januari 2024</td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <th
+                  scope="row"
+                  class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Techno Day
+                </th>
+                <td class="px-6 py-4">22 Desember 2023</td>
+                <td class="px-6 py-4">23 Desember 2023</td>
+                <td class="px-6 py-4">-</td>
+                <td class="px-6 py-4">-</td>
+                <td class="px-6 py-4">-</td>
+                <td class="px-6 py-4">4-5 Januari 2024</td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <th
+                  scope="row"
+                  class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Trilogi Talk show
+                </th>
+                <td class="px-6 py-4">-</td>
+                <td class="px-6 py-4">-</td>
+                <td class="px-6 py-4">-</td>
+                <td class="px-6 py-4">-</td>
+                <td class="px-6 py-4">-</td>
+                <td class="px-6 py-4">4-5 Januari 2024</td>
+              </tr>
+            </tbody>
+          </table>
+=======
         <div class="container w-full  h-72 mx-auto 2xl:px-24">
             <div class="relative overflow-x-auto border border-blue-400 rounded-2xl ">
                 <table class="w-full text-sm text-left text-gray-700">
@@ -704,12 +1619,100 @@
                 </table>
             </div>
 
+>>>>>>> 127a4afbb65d395fa40f1d35ff786988d105382b
         </div>
+      </div>
     </section>
 
     <!-- Akhir section -->
 
     <!-- footer -->
+<<<<<<< HEAD
+    <footer class="translate-y-20 bg-white dark:bg-gray-900 font-poppins">
+      <div class="w-full max-w-screen-xl mx-auto">
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Company
+            </h2>
+            <ul class="font-medium text-gray-500">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">About</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Careers</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Brand Center</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Help center
+            </h2>
+            <ul class="font-medium text-gray-500">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Discord Server</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Twitter</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Facebook</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Legal
+            </h2>
+            <ul class="font-medium text-gray-500">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Licensing</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Download
+            </h2>
+            <ul class="font-medium text-gray-500">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">iOS</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Android</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Windows</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">MacOS</a>
+              </li>
+            </ul>
+          </div>
+=======
     <footer class="bg-white dark:bg-gray-900 translate-y-20 font-poppins">
         <div class="mx-auto w-full max-w-screen-xl">
             <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
@@ -830,11 +1833,115 @@
                     </a>
                 </div>
             </div>
+>>>>>>> 127a4afbb65d395fa40f1d35ff786988d105382b
         </div>
+        <div class="px-4 py-6 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center"
+            >© 2023
+            <a href="https://www.instagram.com/pitchfest_trilogi/"
+              >Pitching Fest 2023</a
+            >. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 space-x-5 sm:justify-center md:mt-0">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 16"
+              >
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- end footer -->
-
 
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -845,22 +1952,20 @@
     <!-- animetion -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script>
-        var typed = new Typewriter('#element', {
-            deleteSpeed: 20,
-            typedSpeed: 100,
-        });
+      var typed = new Typewriter("#element", {
+        deleteSpeed: 20,
+        typedSpeed: 100,
+      });
 
-        typed
-            .typeString('Membentuk Masa Depan yang Berkelanjutan.')
-            .start();
+      typed.typeString("Membentuk Masa Depan yang Berkelanjutan.").start();
 
-        new Typewriter('#intro-header', {
-            strings: ['Introdution Pitching Festival'],
-            autoStart: true,
-        });
+      new Typewriter("#intro-header", {
+        strings: ["Introdution Pitching Festival"],
+        autoStart: true,
+      });
     </script>
 
     <!-- Swiper JS -->
@@ -868,31 +1973,30 @@
 
     <!-- Initialize Swiper -->
     <script>
-        const progressCircle = document.querySelector(".autoplay-progress svg");
-        const progressContent = document.querySelector(".autoplay-progress span");
-        var swiper = new Swiper(".mySwiper", {
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-            delay: 2500,
-            disableOnInteraction: false
+          delay: 2500,
+          disableOnInteraction: false,
         },
         pagination: {
-            el: ".swiper-pagination",
-            clickable: true
+          el: ".swiper-pagination",
+          clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         on: {
-            autoplayTimeLeft(s, time, progress) {
+          autoplayTimeLeft(s, time, progress) {
             progressCircle.style.setProperty("--progress", 1 - progress);
             progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-            }
-        }
-        });
+          },
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>
