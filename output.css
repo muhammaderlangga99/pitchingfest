@@ -795,6 +795,10 @@ video {
   margin-top: 2rem;
 }
 
+.ms-auto {
+  margin-inline-start: auto;
+}
+
 .block {
   display: block;
 }
@@ -889,6 +893,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .max-h-full {
@@ -989,6 +997,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .max-w-2xl {
@@ -1298,6 +1310,16 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-b {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-t {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
 .rounded-tl-lg {
   border-top-left-radius: 0.5rem;
 }
@@ -1485,6 +1507,10 @@ video {
   --tw-gradient-to: #6366f1 var(--tw-gradient-to-position);
 }
 
+.to-slate-900 {
+  --tw-gradient-to: #0f172a var(--tw-gradient-to-position);
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
@@ -1619,6 +1645,10 @@ video {
 
 .pt-36 {
   padding-top: 9rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-left {
@@ -1981,6 +2011,11 @@ video {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gradient-to-br:hover {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -2099,6 +2134,11 @@ video {
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   }
 
+  .dark\:bg-blue-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  }
+
   .dark\:text-blue-500 {
     --tw-text-opacity: 1;
     color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -2147,6 +2187,11 @@ video {
   .dark\:hover\:bg-gray-700:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  }
+
+  .dark\:hover\:bg-blue-700:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(29 78 216 / var(--tw-bg-opacity));
   }
 
   .dark\:hover\:text-white:hover {
@@ -2354,6 +2399,10 @@ video {
 
   .md\:p-8 {
     padding: 2rem;
+  }
+
+  .md\:p-5 {
+    padding: 1.25rem;
   }
 
   .md\:px-0 {
