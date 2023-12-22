@@ -1310,10 +1310,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -1639,8 +1635,8 @@ video {
   padding-bottom: 4rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .pl-3 {
@@ -1655,8 +1651,8 @@ video {
   padding-top: 9rem;
 }
 
-.pb-3 {
-  padding-bottom: 0.75rem;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-left {
