@@ -155,14 +155,15 @@
 .wrap {
     text-align: center;
     position: relative;
-  }
-  .links {
+}
+
+.links {
     display: flex;
     justify-content: space-between;
     position: relative;
-  }
-  .wrap:before {
+}
 
+.wrap:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -171,13 +172,13 @@
     /* background: black; */
     width: 100%;
     transform: translateY(-50%);
-  }
+}
 
 .sw__hero__countdown__wrapper{
     text-align: center;
-    margin: 20px;
+    padding: 10px;
     position: relative;
-    animation: showHeroText 0s 1.2s forwards;
+    animation: showHeroText 0s 1s forwards;
     visibility: hidden; 
 }
 
@@ -200,7 +201,7 @@
 
 
 .sw__hero__countdown__date_container{
-    background-color: #eaeaea;
+    background-color: #ebebeb;
     border-radius: 9px;
     height: 87px;
     vertical-align: middle;
@@ -212,13 +213,13 @@
 } 
 
 .sw__hero__countdown__dates{
-    margin: 11px 4px 0 15px;
+    /* margin: 11px 4px 0 15px; */
     font-size: 40px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
-    letter-spacing: 10.06px;
+    /* letter-spacing: 10.06px; */
     text-align: center;
     color: #000;
     line-height: normal;
@@ -327,11 +328,9 @@
         max-width: 383px;
         min-width: max-content;
     }
-    
-   
-    }
-
 }
+
+
   
 /*
 //  Mobile
@@ -389,6 +388,11 @@
 
 
 @media screen and (max-width: 768px) {
+
+    .sw__hero__countdown__date_container {
+        height: 40px;
+    }
+
     .sw__hero {
         height: auto;
     }
@@ -411,7 +415,15 @@
     }
 
     .sw__hero__countdown__dates{
-        font-size: 30px;
+        font-size: 20px;
+    }
+
+    .sw__hero__countdown__date_label {
+        font-size: 10px;
+    }
+
+    .sw__hero__countdown__date_container {
+        background-color: #fafafa;
     }
 }
 
