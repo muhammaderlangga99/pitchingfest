@@ -27,7 +27,7 @@
             background-image: -webkit-linear-gradient(92deg, #37BCF4, #07976E);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            -webkit-animation: hue 5s infinite linear;
+            -webkit-animation: hue 3.5s infinite linear;
         }
         @-webkit-keyframes hue {
             from {
@@ -368,7 +368,7 @@
                         </div>
                     </div>
                     <div
-                        class="group relative bg-white lg:text-center dark:bg-gray-800 transition shadow-2xl">
+                        class="group relative bg-transparent lg:text-center dark:bg-gray-800 transition md:shadow-2xl">
                         <div class="relative py-12 space-y-8" data-aos="fade-up" data-aos-delay="200">
                             <img src="public/img/idea.png" class="w-32 lg:m-auto" width="512" height="512"
                                 alt="burger illustration" />
@@ -386,7 +386,7 @@
                         </div>
                     </div>
                     <div
-                        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1]">
+                        class="group relative bg-transparent dark:bg-gray-800 transition hover:z-[1]">
                         <div class="py-12 space-y-8" data-aos="fade-up" data-aos-delay="300">
                             <img src="public/img/collab.gif" class="w-32" width="512" height="512"
                                 alt="burger illustration" />
@@ -563,14 +563,17 @@
         <section class="flex flex-col max-w-6xl px-3 py-20 m-auto space-y-10 sponsor font-poppins md:px-0 md:py-32">
             <h2 class="mb-3 text-2xl md:text-4xl font-semibold text-center">Supported by</h2>
             <div class="platinum">
-                <div class="grid grid-cols-1 lg:grid-cols-1 gap-x-5 gap-y-3 lg:gap-8">
-                    <div class="flex w-6/12 col-span-1 m-auto lg:w-5/12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-3 lg:gap-8">
+                    <div class="flex w-6/12 col-span-1 m-auto lg:w-10/12">
                         <img src="public/img/bulog.png" class="object-cover w-full m-auto" alt="">
+                    </div>
+                    <div class="flex w-6/12 col-span-1 m-auto lg:w-7/12">
+                        <img src="public/img/logotdawhite.png" class="object-cover mt-5 md:mt-0 p-3 rounded-xl bg-purple-500 w-full m-auto" alt="">
                     </div>
                 </div>
             </div>
             <div class="gold">
-                <div class="grid grid-cols-1 lg:grid-cols-1 gap-x-5 gap-y-3 lg:gap-8">
+                <div class="grid grid-cols-1 lg:grid-cols-1 gap-x-5 -mt-4 lg:-mt-0 gap-y-3 lg:gap-8">
                     <div class="flex w-6/12 col-span-1 m-auto lg:w-3/12">
                         <img src="public/img/topindo.png" class="object-cover w-full m-auto" alt="">
                     </div>
