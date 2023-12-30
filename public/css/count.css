@@ -201,7 +201,7 @@
 
 
 .sw__hero__countdown__date_container{
-    background-color: #ebebeb;
+    /* background-color: #fafafa; */
     border-radius: 9px;
     height: 87px;
     vertical-align: middle;
@@ -215,7 +215,6 @@
 .sw__hero__countdown__dates{
     /* margin: 11px 4px 0 15px; */
     font-size: 40px;
-    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -241,6 +240,7 @@
 
 .sw__hero__countdown__date_label {
   font-size: 14px;
+  margin-top: 10px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -420,6 +420,7 @@
 
     .sw__hero__countdown__date_label {
         font-size: 10px;
+        margin-top: 10px;
     }
 
     .sw__hero__countdown__date_container {
