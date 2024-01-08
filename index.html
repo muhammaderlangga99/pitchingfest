@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/count.css">
     <!-- flowbite -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <!-- animetion -->
@@ -20,6 +21,23 @@
             background-image: linear-gradient(#a6acc6 1.8px, transparent 1.8px), linear-gradient(to right, #a6acc6 1.8px, transparent 1.8px);
             background-size: 36px 36px;
         }
+
+        .text-gradient {
+            color: #f35626;
+            background-image: -webkit-linear-gradient(92deg, #37BCF4, #07976E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 3.5s infinite linear;
+        }
+        @-webkit-keyframes hue {
+            from {
+                -webkit-filter: hue-rotate(0deg);
+            }
+            to {
+                -webkit-filter: hue-rotate(-360deg);
+            }
+        }
+
     </style>
     <title>Pitching Fest</title>
 </head>
@@ -62,13 +80,32 @@
                         <a href="event.html"
                             class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Event</a>
                     </li>
-                    <!-- <li>
-                        <a href="talkshow.html"
-                            class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Talkshow</a>
-                    </li> -->
                     <li>
-                        <a href="gallery.html"
-                            class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Celebrating
+                            🎉
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="/dayone.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Day
+                                        one</a>
+                                    <a href="/daytwo.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Day
+                                        two</a>
+                                    <a href="/gallery.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Other
+                                        event</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <a href="organizer.html"
@@ -96,9 +133,9 @@
             <img src="public/img/blue-header.svg" class="w-48 blur-xl lg:-translate-y-52 lg:opacity-75"
                 alt="pitchingfest pitching festival">
         </section>
-        <div class="z-30 max-w-screen-xl px-4 py-8 m-auto text-center lg:translate-y-16 lg:py-16">
-            <h1 class="mb-4 text-2xl font-extrabold tracking-tight text-gray-900 font-poppins lg:p-5 md:text-5xl lg:text-6xl dark:text-white bg-opacity-95 backdrop-blur-xl"
-                data-aos="fade-up"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Technosociopreneurship:</span> Shaping a Sustainable Future</h1>
+        <div class="py-8 px-4 m-auto lg:translate-y-16 max-w-screen-xl text-center lg:py-16 z-30">
+            <h1 class="mb-4 font-poppins lg:p-5 text-2xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white bg-opacity-95 backdrop-blur-xl"
+                data-aos="fade-up"><span class="text-transparent bg-clip-text text-gradient">Technosociopreneurship:</span> Shaping a Sustainable Future</h1>
             <p data-aos="fade-up" data-aos-delay="100"
                 class="items-center justify-center inline-block max-w-3xl text-sm tracking-wide text-gray-700 lg:text-xl dark:text-gray-400 caret-slate-300 font-poppins">
                 Festival enterpreneur tahunan universitas trilogi untuk untuk meningkatkan semangat
@@ -124,34 +161,127 @@
                 <img src="public/img/dies natalis.png" class="w-16 lg:w-20" alt="">
             </div>
             <!-- end sponsor -->
+
+            <div class="sw__header">
+                <img src="http://clipart-library.com/images_k/white-adidas-logo-transparent/white-adidas-logo-transparent-6.png"
+                    alt="Brand logo">
+            </div>
         </div>
     </section>
+    <!-- countdown -->
+    <div class="sw__header">
+        <img src="http://clipart-library.com/images_k/white-adidas-logo-transparent/white-adidas-logo-transparent-6.png"
+            alt="Brand logo">
+    </div>
+    
+    <div class="sw__hero font-poppins">
+        <div class="sw__hero__background">
+    
+            <div class="sw__hero__video_container">
+                <div class="video_dark_lay">
+    
+                </div>
+                <video autoplay muted loop class="sw__hero__video_source">
+                    <source src="https://www.youtube.com/watch?v=wPX2fESz8L0" type="video">
+                </video>
+            </div>
+    
+        </div>
+        <div class="sw__hero__content">
+            <div class="sw__hero__countdown grid grid-cols-4">
+                <div class="sw__hero__countdown__wrapper col-span-1" style="display: inline-block; margin-right: 40px;">
+                    <div style="display: flex; justify-content: center;">
+                        <div class="wrap" style="margin-right: 7px;">
+                            <div class="sw__hero__countdown__date_container bg-neutral-100 px-3.5 links">
+                                <p class="sw__hero__countdown__dates font-semibold text-slate-800" id="days1"></p>
+                            </div>
+                        </div>
+    
+                        <div class="wrap">
+                            <div class="sw__hero__countdown__date_container bg-neutral-100 px-3.5 links">
+                                <p class="sw__hero__countdown__dates font-semibold text-slate-800" id="days2"></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <p class="sw__hero__countdown__date_label">Hari</p>
+                </div>
+    
+                <div class="sw__hero__countdown__wrapper col-span-1" style="display: inline-block;">
+                    <div style="display: flex; justify-content: center;">
+                        <div class="wrap" style="margin-right: 7px;">
+                            <div class="sw__hero__countdown__date_container bg-neutral-100 px-3.5 links">
+    
+                                <p class="sw__hero__countdown__dates font-semibold text-slate-800" id="hours1"></p>
+                            </div>
+                        </div>
+                        <div class="wrap">
+    
+                            <div class="sw__hero__countdown__date_container bg-neutral-100 px-3.5 links">
+    
+                                <p class="sw__hero__countdown__dates font-semibold text-slate-800" id="hours2"></p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <p class="sw__hero__countdown__date_label">Jam</p>
+                </div>
+                <div class="sw__hero__countdown__wrapper col-span-1" style="display: inline-block;">
+                    <div style="display: flex; justify-content: center;">
+                        <div class="wrap" style="margin-right: 7px;">
+                            <div class="sw__hero__countdown__date_container bg-neutral-100 px-3.5 links">
+    
+                                <p class="sw__hero__countdown__dates font-semibold text-slate-800" id="minutes1"></p>
+                            </div>
+                        </div>
+                        <div class="wrap">
+    
+                            <div class="sw__hero__countdown__date_container bg-neutral-100 px-3.5 links">
+    
+                                <p class="sw__hero__countdown__dates font-semibold text-slate-800" id="minutes2"></p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <p class="sw__hero__countdown__date_label">Menit</p>
+                </div>
+    
+                <div class="sw__hero__countdown__wrapper col-span-1" style="display: inline-block;">
+                    <div style="display: flex; justify-content: center;">
+                        <div class="wrap" style="margin-right: 7px;">
+                            <div class="sw__hero__countdown__date_container bg-neutral-100 px-3.5 links">
+    
+                                <p class="sw__hero__countdown__dates font-semibold text-slate-800" id="seconds1"></p>
+                            </div>
+                        </div>
+                        <div class="wrap">
+    
+                            <div class="sw__hero__countdown__date_container bg-neutral-100 px-3.5 links">
+    
+                                <p class="sw__hero__countdown__dates font-semibold text-slate-800" id="seconds2"></p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <p class="sw__hero__countdown__date_label">Detik</p>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+    <!-- countdown end -->
     <!-- end header -->
 
-    <!-- sponsor -->
-    <!-- <div class="flex-wrap items-center justify-center hidden p-3 lg:flex lg:gap-x-14 gap-x-14 gap-y-8 backdrop-blur-lg">
-        <div class="flex items-center justify-center object-cover overflow-hidden transition-all duration-300 w-28"
-            data-aos="fade-up" data-aos-delay="100">
-            <img src="public/img/logo.png" alt="aqua" />
-        </div>
-        <div class="flex items-center justify-center object-cover overflow-hidden transition-all duration-300 w-28"
-            data-aos="fade-up" data-aos-delay="150">
-            <img src="public/img/inbistro.png" alt="indosat" />
-        </div>
-        <div class="flex items-center justify-center object-cover overflow-hidden transition-all duration-300 w-28"
-            data-aos="fade-up" data-aos-delay="200">
-            <img src="public/img/trilogi.png" alt="mayora" />
-        </div>
-    </div> -->
-    <!-- end sponsor -->
-
-
     <!-- introducing -->
-    <section class="max-w-6xl px-3 m-auto mt-20 space-y-10 overflow-hidden lg:px-0 font-poppins">
+    <section class="max-w-6xl px-3 mx-auto md:mt-20 space-y-10 overflow-hidden lg:px-0 font-poppins">
         <div class="absolute w-56 h-56 bg-blue-300 rounded-full lg:bg-blue-400 blur-3xl left-10 -z-20 opacity-40"></div>
         <h2 class="text-2xl font-bold tracking-tighter md:text-4xl">Latar belakang <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Pitching Festival</span></h2>
         <div
-            class="flex flex-col gap-10 p-5 font-medium leading-relaxed tracking-wide text-justify lg:flex-row rounded-3xl font-poppins lg:shadow-lg bg-slate-100 backdrop-blur-xl">
+            class="flex flex-col gap-10 md:p-5 font-medium leading-relaxed tracking-wide text-justify lg:flex-row rounded-3xl font-poppins lg:shadow-lg md:bg-slate-100 backdrop-blur-xl">
             <p>
                 Teknososiopreneur menjadi salah satu solusi dari permasalahan yang berkaitan dengan sosial lingkungan
                 saat ini. Dalam
@@ -179,108 +309,109 @@
 
     <!-- Event kami -->
     <section class="relative flex flex-col justify-between max-w-6xl gap-10 px-3 pb-16 m-auto overflow-hidden tentang-kami pt-36 font-poppins md:flex-row">
+        <section
+            class="absolute flex items-center justify-around w-full overflow-hidden bg-transparent lg:h-screen lg:mt-0 -z-20 boxes">
+        </section>
         <div class="absolute bg-blue-300 rounded-full h-44 w-44 blur-3xl right-24 translate-y-28 -z-20 opacity-40"></div>
-            <img class="shadow-xl w-96 rounded-3xl" src="public/img/talkshow-valid.jpg">
-            <div class="m-auto" data-aos="fade-left">
+            <div class="grid grid-cols-4 gap-2 w-10/12 m-auto">
+                <div class="col-span-4 grid grid-cols-4">
+                    <img class="col-span-2 w-96 rounded-lg" src="public/img/talkshow.jpg"  data-aos="fade-down">
+                </div>
+                <div class="col-span-4 grid grid-cols-4 place-self-end">
+                    <img class="col-start-3 col-end-5 w-96 rounded-lg m-auto shadow-2xl" src="public/img/juri.jpg" data-aos="fade-down" data-aos-delay="50">
+                </div>
+            </div>
+            <div class="m-auto text-center">
                 <h1
-                    class="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                    class="mb-4 text-2xl font-bold md:font-extrabold leading-normal tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white" data-aos="fade-down">
                     Jadilah bagian dari <span class="text-blue-600 dark:text-blue-500">masa depan cerah lewat inovasi</span> yang kita bangun.
                 </h1>
-                <p class="text-base font-normal text-gray-500 lg:text-lg dark:text-gray-400">Pastikan langkah saat ini untuk menjadi generasi muda yang yang tangguh, inovatif dan kreatif dengan ide brilian di
+                <p data-aos="fade-down" data-aos-delay="100" class="text-base font-normal lg:text-lg dark:text-gray-400">Pastikan langkah saat ini untuk menjadi generasi muda yang yang tangguh, inovatif dan kreatif dengan ide brilian di
                 Trilogi <span class="font-medium text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Pitching Festival 2024!</span></p>
 
-                <div class="flex gap-4 mt-5">
+                <div data-aos="fade-down" data-aos-delay="200" class="flex gap-4 mt-5 justify-center">
                     <p class="px-3 py-2 text-xs border md:px-4 rounded-2xl bg-slate-100 border-slate-400 md:text-base">Kompetisi ide bisnis</p>
                     <p class="px-3 py-2 text-xs font-medium border md:px-4 rounded-2xl bg-slate-100 border-slate-400 md:text-base text-slate-800 ">Techno day</p>
                     <p class="px-3 py-2 text-xs font-medium border md:px-4 rounded-2xl bg-slate-100 border-slate-400 md:text-base text-slate-800 ">Talkshow</p>
                 </div>
-                <a href="#goal" class="flex flex-col w-10/12 mt-5 font-medium text-blue-600 hover:underline">
-                    <!-- <span class="">scroll now!</span> -->
-                    <div class="mouse">
-                        <div class="roll"></div>
-                        <div class="rollshadow"></div>
-                    </div>
-                </a>
-               
-
             </div>
-    </section>
-    <!-- end Event kami -->
+        </section>
+        <!-- end Event kami -->
+        
+        <!-- goal -->
+        <section id="goal" class="overflow-x-hidden">
+            
+            <div class="absolute bg-yellow-300 rounded-full h-80 w-80 blur-3xl right-10 -z-20 opacity-10 md:opacity-20"></div>
+            <!-- <div class="absolute bottom-0 left-0 bg-red-500 rounded-full h-44 w-44 blur-3xl -z-20 opacity-20"></div> -->
+            <div class="max-w-6xl m-auto font-poppins p-5 lg:h-[110vh] flex flex-col justify-center overflow-hidden">
+                <div class="relative lg:w-1/2">
+                    <p class="font-medium textb"></p>
+                    <h2 class="inline-block my-8 text-2xl font-bold md:text-4xl" data-aos="fade-up">
+                        Tujuan kegiatan.
+                    </h2>
+                </div>
 
-    <!-- goal -->
-    <section id="goal" class="overflow-x-hidden">
-
-        <div class="absolute bg-yellow-300 rounded-full h-44 w-44 blur-3xl right-24 translate-y-28 -z-20 opacity-40"></div>
-        <!-- <div class="absolute bottom-0 left-0 bg-red-500 rounded-full h-44 w-44 blur-3xl -z-20 opacity-20"></div> -->
-        <div class="max-w-6xl m-auto font-poppins p-5 lg:h-[110vh] flex flex-col justify-center overflow-hidden">
-            <div class="relative lg:w-1/2">
-                <p class="font-medium textb"></p>
-                <h2 class="inline-block my-8 text-2xl font-bold md:text-4xl" data-aos="fade-up">
-                    Tujuan kegiatan.
-                </h2>
-            </div>
-
-            <div
-                class="grid mt-16 overflow-hidden text-gray-600 gap-x-16 dark:divide-gray-700 rounded-3xl sm:grid-cols-2 lg:grid-cols-3">
                 <div
-                    class="group relative bg-white dark:bg-gray-800 transition hover:z-[1]">
+                    class="grid mt-16 overflow-hidden text-gray-600 gap-x-16 dark:divide-gray-700 rounded-3xl sm:grid-cols-2 lg:grid-cols-3">
+                    <div
+                    class="group relative bg-transparent backdrop-blur-2xl dark:bg-gray-800 transition hover:z-[1]">
                     <div class="relative py-12 space-y-8" data-aos="fade-up" data-aos-delay="100">
-                        <img src="public/img/skill.png" class="w-32" width="512" height="512"
-                            alt="burger illustration" />
-                        <!-- Illustration by <a href="https://icons8.com/illustrations/author/mRLbKb0Fi4t7">Albina S.</a> from <a
-                            href="https://icons8.com/illustrations">Ouch!</a> -->
-                        <div class="space-y-2">
-                            <h5
-                                class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-secondary">
-                                Meningkatkan kompetensi
-                            </h5>
-                            <p class="text-sm font-normal leading-relaxed tracking-wide text-black dark:text-gray-400">
-                                Mengembangkan skill generasi muda dalam hal ini siswa dan mahasiswa dalam berwirausaha
-                                berbasis sosial, lingkungan, dan teknologi
-                                informasi.
-                            </p>
+                            <img src="public/img/skill.png" class="w-32" width="512" height="512"
+                                alt="burger illustration" />
+                            <!-- Illustration by <a href="https://icons8.com/illustrations/author/mRLbKb0Fi4t7">Albina S.</a> from <a
+                                href="https://icons8.com/illustrations">Ouch!</a> -->
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-secondary">
+                                    Meningkatkan kompetensi
+                                </h5>
+                                <p class="text-sm font-normal leading-relaxed tracking-wide text-black dark:text-gray-400">
+                                    Mengembangkan skill generasi muda dalam hal ini siswa dan mahasiswa dalam berwirausaha
+                                    berbasis sosial, lingkungan, dan teknologi
+                                    informasi.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="group relative bg-white lg:text-center dark:bg-gray-800 transition hover:z-[1] shadow-2xl">
-                    <div class="relative py-12 space-y-8" data-aos="fade-up" data-aos-delay="200">
-                        <img src="public/img/idea.png" class="w-32 lg:m-auto" width="512" height="512"
-                            alt="burger illustration" />
-                        <!-- Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> -->
-                        <div class="space-y-2">
-                            <h5
-                                class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-secondary">
-                                Mendorong ide kreatif
-                            </h5>
-                            <p class="text-sm font-normal leading-relaxed tracking-wide text-black dark:text-gray-400">
-                                Mendorong inovasi dari generasi muda dalam berwirausaha berbasis sosial, lingkungan, dan
-                                teknologi informasi.
-                            </p>
+                    <div
+                        class="group relative bg-transparent lg:text-center dark:bg-gray-800 transition md:shadow-2xl">
+                        <div class="relative py-12 space-y-8" data-aos="fade-up" data-aos-delay="200">
+                            <img src="public/img/idea.png" class="w-32 lg:m-auto" width="512" height="512"
+                                alt="burger illustration" />
+                            <!-- Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> -->
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-secondary">
+                                    Mendorong ide kreatif
+                                </h5>
+                                <p class="text-sm font-normal leading-relaxed tracking-wide text-black dark:text-gray-400">
+                                    Mendorong inovasi dari generasi muda dalam berwirausaha berbasis sosial, lingkungan, dan
+                                    teknologi informasi.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-100">
-                    <div class="py-12 space-y-8" data-aos="fade-up" data-aos-delay="300">
-                        <img src="public/img/collab.gif" class="w-32" width="512" height="512"
-                            alt="burger illustration" />
-                        <!-- Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> -->
-                        <div class="space-y-2">
-                            <h5 class="text-xl font-semibold transition text-slate-700 group-hover:text-secondary">
-                                Kolaborasi
-                            </h5>
-                            <p class="text-sm font-normal leading-relaxed tracking-wide text-black dark:text-gray-400">
-                                Meningkatkan motivasi dan keterlibatan generasi muda berkolaborasi dalam membangun
-                                sebuah usaha berbasis sosial,
-                                lingkungan, dan teknologi informasi.
-                            </p>
+                    <div
+                        class="group relative bg-transparent dark:bg-gray-800 transition hover:z-[1]">
+                        <div class="py-12 space-y-8" data-aos="fade-up" data-aos-delay="300">
+                            <img src="public/img/collab.gif" class="w-32" width="512" height="512"
+                                alt="burger illustration" />
+                            <!-- Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> -->
+                            <div class="space-y-2">
+                                <h5 class="text-xl font-semibold transition text-slate-700 group-hover:text-secondary">
+                                    Kolaborasi
+                                </h5>
+                                <p class="text-sm font-normal leading-relaxed tracking-wide text-black dark:text-gray-400">
+                                    Meningkatkan motivasi dan keterlibatan generasi muda berkolaborasi dalam membangun
+                                    sebuah usaha berbasis sosial,
+                                    lingkungan, dan teknologi informasi.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     
     <!-- end goal -->
 
@@ -367,7 +498,7 @@
         <section class="grid max-w-6xl grid-cols-5 gap-10 px-5 py-16 m-auto lg:pt-32 lg:pb-40 font-poppins lg:px-0">
             <!-- <img src="public/img/logo1.png" class="absolute w-14 left-14 animate-logo" alt="pitchingfest pitching festival" data-aos="fade-up"> -->
             <div class="col-span-5 m-auto md:col-span-2 space-y-7">
-                <h2 class="text-4xl font-bold" data-aos="fade-up">Ikuti keseruannya di event kami!</h2>
+                <h2 class="text-2xl md:text-4xl font-bold" data-aos="fade-up">Ikuti keseruannya di event kami!</h2>
                 <p class="font-light leading-relaxed tracking-wide" data-aos="fade-up">Acara ini menawarkan berbagai
                     kegiatan seru, mulai dari Pitching sampai dengan pameran produk inovasi generasi muda.</p>
 
@@ -386,49 +517,50 @@
 
         </section>
 
-
         <!-- organizer -->
         <section class="max-w-6xl px-3 py-20 m-auto mt-20 font-poppins lg:px-0">
-            <div class="absolute bg-yellow-300 rounded-full h-80 w-80 blur-3xl right-10 -z-20 opacity-20 md:opacity-30"></div>
+            <div class="absolute bg-yellow-300 rounded-full h-80 w-80 blur-3xl right-10 -z-20 opacity-10 md:opacity-20"></div>
 
             <h3 class="text-2xl font-bold md:text-4xl">Organizers</h3>
-
-            <h6 class="mt-8 ml-2 font-medium">Committee</h6>
             <div class="grid grid-cols-1 gap-8 mt-5 cards lg:grid-cols-3">
-                <div class="col-span-1 gap-5 px-5 py-3 border card bg-slate-50 rounded-xl">
-                    <h4 class="font-bold">Maulidian, M.M</h4>
-                    <p class="text-slate-500">Committee</p>
+                <div class="col-span-1 gap-5 px-5 py-3 card bg-slate-50 rounded-xl">
+                    <h4 class="font-medium text-sm md:text-base md:font-bold">Maulidian, M.M</h4>
+                    <p class="text-slate-500 text-sm md:text-base">Committee</p>
                 </div>
-                <div class="col-span-1 gap-5 px-5 py-3 border card bg-slate-50 rounded-xl">
-                    <h4 class="font-bold">Lely Dahlia, S.E., M.Ak.,CertIPSAS</h4>
-                    <p class="text-slate-500">Committee</p>
+                <div class="col-span-1 gap-5 px-5 py-3 card bg-slate-50 rounded-xl">
+                    <h4 class="font-medium text-sm md:text-base md:font-bold">Novita, SE.Ak.,M.Ak.,CSRS.,CA.,CIPSAS</h4>
+                    <p class="text-slate-500 text-sm md:text-base">Committee</p>
                 </div>
-                <div class="col-span-1 gap-5 px-5 py-3 border card bg-slate-50 rounded-xl">
-                    <h4 class="font-bold">Rizka Ramayanti, S.E., M.Si</h4>
-                    <p class="text-slate-500">Committee</p>
+                <div class="col-span-1 gap-5 px-5 py-3 card bg-slate-50 rounded-xl">
+                    <h4 class="font-medium text-sm md:text-base md:font-bold">Lely Dahlia, S.E., M.Ak.,CertIPSAS</h4>
+                    <p class="text-slate-500 text-sm md:text-base">Committee</p>
                 </div>
-                <div class="col-span-1 gap-5 px-5 py-3 border card bg-slate-50 rounded-xl">
-                    <h4 class="font-bold">Mutiara Dewi Puspitawati, SP., M.Si.</h4>
-                    <p class="text-slate-500">Committee</p>
+                <div class="col-span-1 gap-5 px-5 py-3 card bg-slate-50 rounded-xl">
+                    <h4 class="font-medium text-sm md:text-base md:font-bold">Rizka Ramayanti, S.E., M.Si</h4>
+                    <p class="text-slate-500 text-sm md:text-base">Committee</p>
                 </div>
-                <div class="col-span-1 gap-5 px-5 py-3 border card bg-slate-50 rounded-xl">
-                    <h4 class="font-bold">Erik Armayuda, Ph.D</h4>
-                    <p class="text-slate-500">Committee</p>
+                <div class="col-span-1 gap-5 px-5 py-3 card bg-slate-50 rounded-xl">
+                    <h4 class="font-medium text-sm md:text-base md:font-bold">Mutiara Dewi Puspitawati, SP., M.Si.</h4>
+                    <p class="text-slate-500 text-sm md:text-base">Committee</p>
                 </div>
-                <div class="col-span-1 gap-5 px-5 py-3 border card bg-slate-50 rounded-xl">
-                    <h4 class="font-bold">Dr. Inanpi Hidayati S.</h4>
-                    <p class="text-slate-500">Committee</p>
+                <div class="col-span-1 gap-5 px-5 py-3 card bg-slate-50 rounded-xl">
+                    <h4 class="font-medium text-sm md:text-base md:font-bold">Erik Armayuda, Ph.D</h4>
+                    <p class="text-slate-500 text-sm md:text-base">Committee</p>
                 </div>
-                <div class="col-span-1 gap-5 px-5 py-3 border card bg-slate-50 rounded-xl">
-                    <h4 class="font-bold">Hermawan Seftiono, S.Si., M.Si.</h4>
-                    <p class="text-slate-500">Committee</p>
+                <div class="col-span-1 gap-5 px-5 py-3 card bg-slate-50 rounded-xl">
+                    <h4 class="font-medium text-sm md:text-base md:font-bold">Dr. Inanpi Hidayati S.</h4>
+                    <p class="text-slate-500 text-sm md:text-base">Committee</p>
                 </div>
-                <div class="col-span-1 gap-5 px-5 py-3 border card bg-slate-50 rounded-xl">
-                    <h4 class="font-bold">Ratih Mahardika, S.T., M.Ds</h4>
-                    <p class="text-slate-500">Committee</p>
+                <div class="col-span-1 gap-5 px-5 py-3 card bg-slate-50 rounded-xl">
+                    <h4 class="font-medium text-sm md:text-base md:font-bold">Hermawan Seftiono, S.Si., M.Si.</h4>
+                    <p class="text-slate-500 text-sm md:text-base">Committee</p>
+                </div>
+                <div class="col-span-1 gap-5 px-5 py-3 card bg-slate-50 rounded-xl">
+                    <h4 class="font-medium text-sm md:text-base md:font-bold">Ratih Mahardika, S.T., M.Ds</h4>
+                    <p class="text-slate-500 text-sm md:text-base">Committee</p>
                 </div>
                 <a href="organizer.html"
-                    class="inline-block col-span-1 gap-5 px-5 py-3 text-center transition-all card bg-blue-50 rounded-xl hover:shadow">
+                    class="inline-block col-span-1 gap-5 px-5 py-3 text-sm md:text-base transition-all card bg-blue-50 rounded-xl hover:shadow">
                     <h4 class="font-semibold text-blue-700">Team Penyelenggara</h4>
                     <p href="organizer.html" class="text-slate-500">selengkapnya <i class="bi bi-arrow-right"></i></p>
                 </a>
@@ -437,17 +569,23 @@
         <!-- end organizer -->
 
         <!-- sponsor -->
-        <section class="flex flex-col max-w-6xl px-3 py-20 m-auto space-y-10 sponsor font-poppins md:px-0 md:py-32">
-            <h2 class="mb-3 text-3xl font-semibold text-center">Supported by</h2>
+        <section class="flex flex-col max-w-6xl px-3 py-20 m-auto space-y-10 sponsor font-poppins md:px-0 md:py-32 relative overflow-hidden">
+            <div class="flex absolute w-full h-full -z-50 opacity-20 blur-2xl">
+                <img src="public/img/logo.png" class="m-auto" alt="">
+            </div>
+            <h2 class="mb-3 text-2xl md:text-4xl font-semibold text-center">Supported by</h2>
             <div class="platinum">
-                <div class="grid grid-cols-1 lg:grid-cols-1 gap-x-5 gap-y-3 lg:gap-8">
-                    <div class="flex w-6/12 col-span-1 m-auto lg:w-5/12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-3 lg:gap-8">
+                    <div class="flex w-6/12 col-span-1 m-auto lg:w-10/12">
                         <img src="public/img/bulog.png" class="object-cover w-full m-auto" alt="">
+                    </div>
+                    <div class="flex w-6/12 col-span-1 m-auto lg:w-10/12">
+                        <img src="public/img/cimb.png" class="object-cover w-full m-auto" alt="">
                     </div>
                 </div>
             </div>
             <div class="gold">
-                <div class="grid grid-cols-1 lg:grid-cols-1 gap-x-5 gap-y-3 lg:gap-8">
+                <div class="grid grid-cols-1 lg:grid-cols-1 gap-x-5 -mt-4 lg:-mt-0 gap-y-3 lg:gap-8">
                     <div class="flex w-6/12 col-span-1 m-auto lg:w-3/12">
                         <img src="public/img/topindo.png" class="object-cover w-full m-auto" alt="">
                     </div>
@@ -464,15 +602,23 @@
                     
                 </div>
             </div>
-            <div class="bronze">
-                <div class="grid grid-cols-2 lg:grid-cols-2 gap-x-5 gap-y-3 lg:gap-8 md:mt-12">
-                    <div class="flex w-4/12 col-span-1 m-auto lg:w-2/12">
-                        <img src="public/img/Attaqie.jpg" class="object-cover w-full m-auto" alt="">
+            <div class="bronze flex">
+                <div class="grid grid-cols-10 gap-x-3 gap-y-8 lg:gap-x-8 lg:gap-y-0 md:mt-12 justify-center">
+                    <div class="flex col-span-5 md:col-span-2 w-3/12 md:w-4/12 m-auto">
+                        <img src="public/img/Attaqie.jpg" class="object-cover w-full m-auto rounded-xl" alt="">
                     </div>
-                    <div class="flex w-4/12 col-span-1 m-auto lg:w-2/12">
+                    <div class="flex col-span-5 md:col-span-2 w-3/12 md:w-4/12 m-auto">
                         <img src="public/img/accountax.png" class="object-cover w-full m-auto" alt="">
                     </div>
-                    
+                    <div class="flex col-span-5 md:col-span-2 w-3/12 md:w-4/12 m-auto">
+                        <img src="public/img/Koperasi Trilogi 8.jpg" class="object-cover w-full m-auto rounded-xl" alt="">
+                    </div>
+                    <div class="flex col-span-5 md:col-span-2 w-5/12 md:w-6/12 m-auto">
+                        <img src="public/img/wardah.png" class="object-cover w-full m-auto" alt="">
+                    </div>
+                    <div class="flex col-span-5 md:col-span-2 w-4/12 md:w-5/12 m-auto">
+                        <img src="public/img/logo TDA.png" class="object-cover w-full m-auto" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -615,23 +761,12 @@
         <!-- animtion -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
-            AOS.init();
-        </script>
-        <script>
-            var typed = new Typewriter('#element', {
-                deleteSpeed: 20,
-                typedSpeed: 100,
-            });
-
-            typed
-                .typeString('Membentuk Masa Depan yang Berkelanjutan.')
-                .start();
-
-            new Typewriter('#intro-header', {
-                strings: ['Introdution Pitching Festival'],
-                autoStart: true,
+            AOS.init({
+                once: true,
             });
         </script>
+
+        <script src="public/js/count.js"></script>
 </body>
 
 </html>
